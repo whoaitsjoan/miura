@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrarySourceAsset
+  m_Library:
+  - m_Name: Default
+    m_Hash: 753088835
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: kai_spritesheet_0
+      m_Hash: 754574174
+      m_Sprite: {fileID: 1610842195, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1610842195, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 0
+  - m_Name: Idle
+    m_Hash: 1008081451
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: kai_idleanim1
+      m_Hash: 1062300692
+      m_Sprite: {fileID: 21300000, guid: a2837772d2cd8fe49b3bbe2006108e83, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: a2837772d2cd8fe49b3bbe2006108e83, type: 3}
+    - m_Name: kai_idleanim2
+      m_Hash: 643317166
+      m_Sprite: {fileID: 21300000, guid: d2cdd257960f8e94dab0fccf827a34b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: d2cdd257960f8e94dab0fccf827a34b7, type: 3}
+    - m_Name: kai_idleanim3
+      m_Hash: 291441976
+      m_Sprite: {fileID: 21300000, guid: f7fc651005cdf7243a0196442518a34d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: f7fc651005cdf7243a0196442518a34d, type: 3}
+    - m_Name: kai_idleanim4
+      m_Hash: 255563931
+      m_Sprite: {fileID: 21300000, guid: a4015919271db934d9c53308c64574a4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: a4015919271db934d9c53308c64574a4, type: 3}
+    - m_Name: kai_idleanim5
+      m_Hash: 943499277
+      m_Sprite: {fileID: 21300000, guid: e3048f53508c00346985e4e816c38605, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: e3048f53508c00346985e4e816c38605, type: 3}
+    - m_Name: kai_idleanim6
+      m_Hash: 557185463
+      m_Sprite: {fileID: 21300000, guid: 6448405626b6a794488d6af788f37ebe, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 6448405626b6a794488d6af788f37ebe, type: 3}
+    - m_Name: kai_idleanim7
+      m_Hash: 372427041
+      m_Sprite: {fileID: 21300000, guid: 0471abe54d81b084a8d775e68febf87b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 0471abe54d81b084a8d775e68febf87b, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 0
+  - m_Name: Walk
+    m_Hash: 765711723
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: kai_spritesheet_0
+      m_Hash: 754574174
+      m_Sprite: {fileID: 1610842195, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1610842195, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+    - m_Name: kai_spritesheet_1
+      m_Hash: 469685192
+      m_Sprite: {fileID: -1290420765, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1290420765, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+    - m_Name: kai_spritesheet_2
+      m_Hash: 49775218
+      m_Sprite: {fileID: 1920673648, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1920673648, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+    - m_Name: kai_spritesheet_3
+      m_Hash: 904966884
+      m_Sprite: {fileID: 55066598, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 55066598, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 0
+  - m_Name: Jump
+    m_Hash: 125937960
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: kai_spritesheet_2
+      m_Hash: 49775218
+      m_Sprite: {fileID: 1920673648, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1920673648, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  m_PrimaryLibraryGUID: 46219017928b2cc4fa7025eada80ac6a
+  m_ModificationHash: 639067871448725307
+  m_Version: 1

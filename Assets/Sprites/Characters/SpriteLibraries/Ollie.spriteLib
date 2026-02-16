@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrarySourceAsset
+  m_Library:
+  - m_Name: Default
+    m_Hash: 753088835
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: ollie_spritesheet_0
+      m_Hash: 978005188
+      m_Sprite: {fileID: 666611745, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 666611745, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: Idle
+    m_Hash: 1008081451
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: ollie_idleanim1
+      m_Hash: 638407530
+      m_Sprite: {fileID: 21300000, guid: 18e513f3c381b48429f97c4d881f067b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 18e513f3c381b48429f97c4d881f067b, type: 3}
+    - m_Name: ollie_idleanim2
+      m_Hash: 1057227472
+      m_Sprite: {fileID: 21300000, guid: 9938adf12df55e1459e57e0d258aab53, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 9938adf12df55e1459e57e0d258aab53, type: 3}
+    - m_Name: ollie_idleanim3
+      m_Hash: 134427206
+      m_Sprite: {fileID: 21300000, guid: f0b41d9ad57b1d0469990fb82ebb08cc, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: f0b41d9ad57b1d0469990fb82ebb08cc, type: 3}
+    - m_Name: ollie_idleanim4
+      m_Hash: 375891941
+      m_Sprite: {fileID: 21300000, guid: e9041256b3069d844868fa70f89fa0a7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: e9041256b3069d844868fa70f89fa0a7, type: 3}
+    - m_Name: ollie_idleanim5
+      m_Hash: 559978355
+      m_Sprite: {fileID: 21300000, guid: 32744fc86ab7fc642aca6859f59b5fa0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 32744fc86ab7fc642aca6859f59b5fa0, type: 3}
+    - m_Name: ollie_idleanim6
+      m_Hash: 946456265
+      m_Sprite: {fileID: 21300000, guid: 381212f109adc6949b32e3d09aa3533c, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 381212f109adc6949b32e3d09aa3533c, type: 3}
+    - m_Name: ollie_idleanim7
+      m_Hash: 258930271
+      m_Sprite: {fileID: 21300000, guid: 37efe08b90b5d024296da14a1c7098a5, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 21300000, guid: 37efe08b90b5d024296da14a1c7098a5, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 7
+  - m_Name: Walk
+    m_Hash: 765711723
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: ollie_spritesheet_0
+      m_Hash: 978005188
+      m_Sprite: {fileID: 666611745, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 666611745, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+    - m_Name: ollie_spritesheet_1
+      m_Hash: 223091794
+      m_Sprite: {fileID: 693055379, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 693055379, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+    - m_Name: ollie_spritesheet_2
+      m_Hash: 340086248
+      m_Sprite: {fileID: -1710040676, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1710040676, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+    - m_Name: ollie_spritesheet_3
+      m_Hash: 591560062
+      m_Sprite: {fileID: -220404635, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -220404635, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: Jump
+    m_Hash: 125937960
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: ollie_spritesheet_2
+      m_Hash: 340086248
+      m_Sprite: {fileID: -1710040676, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1710040676, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 639067924115536504
+  m_Version: 1
