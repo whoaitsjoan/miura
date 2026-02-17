@@ -1,10 +1,12 @@
 using System.Collections;
-using UnityEditor.Experimental.GraphView;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class OllieController : MonoBehaviour
+
+public class BaileyController : MonoBehaviour
 {
+    
     private InputSystem_Actions input;
     private Rigidbody2D rb;
     private GroundCheck ground;
@@ -14,19 +16,19 @@ public class OllieController : MonoBehaviour
     [SerializeField] private float baseGravity = 2f;
     [SerializeField] private float maxFallSpeed = 18f;
     [SerializeField] private float fallSpeedMultiplier = 2f;
-  
+
+    [Header("Fly")]
+    
+    [SerializeField] float flyForce;
+    [SerializeField] private float flyDuration = 0.1f;
+    [SerializeField] private float flyCooldown = 0.1f;
     private bool onGround;
-    [Header("Dash")]
-    [SerializeField] private float dashSpeed = 20f;
-    [SerializeField] private float dashDuration = 0.1f;
-    [SerializeField] private float dashCooldown = 0.1f;
-    bool isDashing; 
-    bool canDash = true;
-    bool isFacingRight = true;
+    private Vector2 direction;
+    bool isFacingRight;
     float horizontalMovement;
-
-
-
+    bool isFlying; 
+    bool canFly = true;
+    int flyCycle = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,28 +37,32 @@ public class OllieController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         ground = GetComponent<GroundCheck>();   
 
-        input.Ollie.Enable();
+        input.Bailey.Enable();
 
         input.Kai.Disable();
-        input.Bailey.Disable();
+        input.Ollie.Disable();
         input.UI.Disable();
     }
 
     void Update(){
         Flip();
+        if (!isFlying)
+        {
+            Vector2 newVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
+            rb.linearVelocity = newVelocity;
+        }
         Gravity();
     }
 
     private void FixedUpdate(){
         onGround = ground.OnGround;
-        if (!isDashing)
+        if (onGround)
         {
-            Vector2 newVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
-            rb.linearVelocity = newVelocity;
+            flyCycle = 1;
         }
     }
 
-    private void Flip(){
+  private void Flip(){
         if (isFacingRight && rb.linearVelocity.x < -0.1f){
             isFacingRight = false;
             Vector3 ls = transform.localScale;
@@ -70,7 +76,8 @@ public class OllieController : MonoBehaviour
             transform.localScale = ls;
         }
     }
-   private void OnJump(InputValue inputValue){
+
+    private void OnJump(InputValue inputValue){
 
         if (onGround && inputValue.isPressed)
         {
@@ -86,7 +93,7 @@ public class OllieController : MonoBehaviour
         horizontalMovement = inputValue.Get<Vector2>().x;
     }
 
-        private void Gravity()
+      private void Gravity()
     {
         if(rb.linearVelocity.y < 0)
         {
@@ -99,29 +106,30 @@ public class OllieController : MonoBehaviour
         }
     }
 
-    private void OnDash(){
-        if(canDash){
-            Debug.Log("dash");
-            StartCoroutine(DashCoroutine());
+    private void OnFly()
+    {
+        Debug.Log("fly");
+        if (canFly&&flyCycle==1)
+        {
+            flyCycle = 0;
+            StartCoroutine(startFly());
         }
+        
     }
 
-    private IEnumerator DashCoroutine(){
-        canDash = false;
-        isDashing = true;
-        float dashDirection = isFacingRight ? 1f : -1f;
+    private IEnumerator startFly()
+    {
+        canFly = false;
+        isFlying = true;
         var gravity = rb.gravityScale;
         rb.gravityScale = 0;
-        rb.linearVelocity = new Vector2(dashDirection * dashSpeed, rb.linearVelocity.y);
-        
+        rb.AddForce(Vector2.up*flyForce, ForceMode2D.Impulse);
 
-        yield return new WaitForSeconds(dashDuration);
-
-        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-        isDashing = false;
+        yield return new WaitForSeconds(flyDuration);
+        isFlying = false;
         rb.gravityScale = gravity;
-
-        yield return new WaitForSeconds(dashCooldown);
-        canDash = true;
+        yield return new WaitForSeconds(flyCooldown);
+        canFly = true;
     }
 }
+

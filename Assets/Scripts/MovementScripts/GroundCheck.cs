@@ -18,7 +18,7 @@ public class GroundCheck : MonoBehaviour
 
     void FixedUpdate()
     {
-        _hit = Physics2D.Raycast(transform.position, Vector2.down, 1.5f, LayerMask.GetMask("Ground"));
+        _hit = Physics2D.Raycast(transform.position, Vector2.down, 1.0f, LayerMask.GetMask("Ground"));
         if (_hit)
         {
         OnGround = true;
