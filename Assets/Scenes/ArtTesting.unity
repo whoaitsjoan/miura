@@ -1058,10 +1058,11 @@ GameObject:
   - component: {fileID: 1206911729}
   - component: {fileID: 1206911731}
   - component: {fileID: 1206911732}
-  - component: {fileID: 1206911734}
   - component: {fileID: 1206911733}
   - component: {fileID: 1206911736}
   - component: {fileID: 1206911735}
+  - component: {fileID: 1206911737}
+  - component: {fileID: 1206911738}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1329,20 +1330,6 @@ MonoBehaviour:
   _cameraFollowGO: {fileID: 239045568}
   IsFacingRight: 0
   _timeUntilAFK: 3
---- !u!114 &1206911734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206911723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73fd5621964d47041a4b16972e71f2c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KaiController1
-  jumpForce: 2.5
-  moveSpeed: 5
 --- !u!114 &1206911735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1373,6 +1360,40 @@ MonoBehaviour:
   m_labelHash: 7.1022485e-12
   m_SpriteKey: 0
   m_SpriteHash: 693605405
+--- !u!114 &1206911737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206911723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8531d9349895000439a71a36f9ff2fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KaiController
+  moveSpeed: 5
+  jumpForce: 10
+  baseGravity: 2
+  maxFallSpeed: 18
+  fallSpeedMultiplier: 2
+  poundForce: 2.5
+  poundDuration: 0.1
+  poundCooldown: 0.1
+--- !u!114 &1206911738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206911723}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73fd5621964d47041a4b16972e71f2c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KaiController1
+  jumpForce: 2.5
+  moveSpeed: 5
 --- !u!1 &1875493527
 GameObject:
   m_ObjectHideFlags: 0
@@ -3316,7 +3337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3546305135829534216, guid: 6705e37611d003445ae0fbf0be992287, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.11
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 3546305135829534216, guid: 6705e37611d003445ae0fbf0be992287, type: 3}
       propertyPath: m_LocalPosition.z

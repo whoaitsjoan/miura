@@ -22,10 +22,10 @@ public class OllieController : MonoBehaviour
     [SerializeField] private float dashCooldown = 0.1f;
     bool isDashing; 
     bool canDash = true;
-    bool isFacingRight = true;
+    //bool isFacingRight = true;
     float horizontalMovement;
 
-
+    private PlayerAnimations playerAnimations;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,7 +43,7 @@ public class OllieController : MonoBehaviour
     }
 
     void Update(){
-        Flip();
+        //Flip();
         Gravity();
     }
 
@@ -54,9 +54,11 @@ public class OllieController : MonoBehaviour
             Vector2 newVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
             rb.linearVelocity = newVelocity;
         }
+        if (onGround && rb.linearVelocity.y == 0)
+        playerAnimations.NotJumping();
     }
 
-    private void Flip(){
+    /*private void Flip(){
         if (isFacingRight && rb.linearVelocity.x < -0.1f){
             isFacingRight = false;
             Vector3 ls = transform.localScale;
@@ -70,11 +72,13 @@ public class OllieController : MonoBehaviour
             transform.localScale = ls;
         }
     }
+    */
    private void OnJump(InputValue inputValue){
 
         if (onGround && inputValue.isPressed)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            playerAnimations.Jumping();
         }    
         if (onGround && !inputValue.isPressed)
         {
@@ -84,6 +88,10 @@ public class OllieController : MonoBehaviour
 
     private void OnMove(InputValue inputValue){
         horizontalMovement = inputValue.Get<Vector2>().x;
+        playerAnimations.Walking();
+
+        if (horizontalMovement == 0)
+        playerAnimations.NotWalking();
     }
 
         private void Gravity()
@@ -109,7 +117,7 @@ public class OllieController : MonoBehaviour
     private IEnumerator DashCoroutine(){
         canDash = false;
         isDashing = true;
-        float dashDirection = isFacingRight ? 1f : -1f;
+        float dashDirection = playerAnimations.IsFacingRight ? 1f : -1f;
         var gravity = rb.gravityScale;
         rb.gravityScale = 0;
         rb.linearVelocity = new Vector2(dashDirection * dashSpeed, rb.linearVelocity.y);

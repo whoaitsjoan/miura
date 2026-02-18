@@ -7,6 +7,11 @@ public class PlayerAnimations : MonoBehaviour
     private CameraFollowObject _cameraFollowObject;
     private float _fallSpeedDampingChangeThreshold;
 
+    private KaiController kaiController;
+    private OllieController ollieController;
+    private BaileyController baileyController;
+
+
     //these variables control flipping the player left or right
     private Rigidbody2D rb;
     [HideInInspector] public bool IsFacingRight;
@@ -22,6 +27,11 @@ public class PlayerAnimations : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         _cameraFollowObject = _cameraFollowGO.GetComponent<CameraFollowObject>();
         _fallSpeedDampingChangeThreshold = CameraManager.instance._fallSpeedChangeThreshold;
+
+        /*kaiController = GetComponent<KaiController>();
+        ollieController = GetComponent<OllieController>();
+        baileyController = GetComponent<BaileyController>();
+        */
     }
 
     // Update is called once per frame
@@ -95,7 +105,11 @@ public class PlayerAnimations : MonoBehaviour
         //if the player is moving at all based on the velocity
         //then we need to handle turning the player
         if (rb.linearVelocity.x < 0 || rb.linearVelocity.x > 0)
-        TurnCheck();
+        {
+            Debug.Log("Turn check!");
+            TurnCheck();
+        }
+        
     }
 
     public void NotWalking()

@@ -24,15 +24,18 @@ public class KaiController : MonoBehaviour
     private int poundCycle =1;
     bool canPound = true;
     private Vector2 direction;
-    bool isFacingRight;
+    //bool isFacingRight;
     float horizontalMovement;
+
+    private PlayerAnimations playerAnimations;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         input = new InputSystem_Actions();
         rb = GetComponent<Rigidbody2D>();
-        ground = GetComponent<GroundCheck>();   
+        ground = GetComponent<GroundCheck>(); 
+        playerAnimations = GetComponent<PlayerAnimations>();   
 
         input.Kai.Enable();
         input.Ollie.Disable();
@@ -41,7 +44,7 @@ public class KaiController : MonoBehaviour
     }
 
     void Update(){
-        Flip();
+        //Flip();
         if(!isPounding){
         Vector2 newVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
         rb.linearVelocity = newVelocity;}
@@ -54,9 +57,12 @@ public class KaiController : MonoBehaviour
         {
             poundCycle = 1;
         }
+
+        if (onGround && rb.linearVelocity.y == 0)
+        playerAnimations.NotJumping();
     }
 
-  private void Flip(){
+  /*private void Flip(){
         if (isFacingRight && rb.linearVelocity.x < -0.1f){
             isFacingRight = false;
             Vector3 ls = transform.localScale;
@@ -70,12 +76,13 @@ public class KaiController : MonoBehaviour
             transform.localScale = ls;
         }
     }
-
+    */
     private void OnJump(InputValue inputValue){
 
         if (onGround && inputValue.isPressed)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            playerAnimations.Jumping();
         }    
         if (onGround && !inputValue.isPressed)
         {
@@ -109,6 +116,10 @@ public class KaiController : MonoBehaviour
 
     private void OnMove(InputValue inputValue){
         horizontalMovement = inputValue.Get<Vector2>().x;
+        playerAnimations.Walking();
+
+        if (horizontalMovement == 0)
+        playerAnimations.NotWalking();
     }
 
     private IEnumerator startPound()
