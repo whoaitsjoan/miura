@@ -122,8 +122,17 @@ public class OllieController : MonoBehaviour
     {
         if (inputValue.isPressed)
         {
-        Debug.Log("Switching!");
+        Debug.Log("Switching to Kai!");
         characterSwitch.KaiSwitch();
+        }
+    }
+
+    private void OnBaileySwitch(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+        Debug.Log("Switching to Bailey!");
+        characterSwitch.BaileySwitch();
         }
     }
 

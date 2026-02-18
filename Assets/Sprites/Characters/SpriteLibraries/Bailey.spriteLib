@@ -17,91 +17,91 @@ MonoBehaviour:
     m_Hash: 753088835
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: bailey_spritesheet_0
-      m_Hash: 476998309
-      m_Sprite: {fileID: 1591223697, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
+    - m_Name: spritesheet_0
+      m_Hash: 1056384644
+      m_Sprite: {fileID: 31346954, guid: 981009de9b48d28419f8279753f28179, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 1591223697, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
+      m_SpriteOverride: {fileID: 31346954, guid: 981009de9b48d28419f8279753f28179, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
   - m_Name: Idle
     m_Hash: 1008081451
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: bailey_idleanim1
-      m_Hash: 733142697
-      m_Sprite: {fileID: 21300000, guid: 23ced759ce1fdfb4080ba742733d376f, type: 3}
+    - m_Name: idleanim1
+      m_Hash: 795283162
+      m_Sprite: {fileID: 21300000, guid: 176323fbf56f1654f9f9f2550b0b2fd1, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 21300000, guid: 23ced759ce1fdfb4080ba742733d376f, type: 3}
-    - m_Name: bailey_idleanim2
-      m_Hash: 851152659
-      m_Sprite: {fileID: 21300000, guid: fbe678973aac31943a7a8b42990c55cc, type: 3}
+      m_SpriteOverride: {fileID: 21300000, guid: 176323fbf56f1654f9f9f2550b0b2fd1, type: 3}
+    - m_Name: idleanim2
+      m_Hash: 913203040
+      m_Sprite: {fileID: 21300000, guid: ba6767f3caa2c7a45843c46015e56800, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 21300000, guid: fbe678973aac31943a7a8b42990c55cc, type: 3}
-    - m_Name: bailey_idleanim3
-      m_Hash: 96255877
-      m_Sprite: {fileID: 21300000, guid: 3d882e7a332132b40a69cfb771cf6cef, type: 3}
+      m_SpriteOverride: {fileID: 21300000, guid: ba6767f3caa2c7a45843c46015e56800, type: 3}
+    - m_Name: idleanim3
+      m_Hash: 23687158
+      m_Sprite: {fileID: 21300000, guid: 87629bbffdce5b242ae47f1ec2dd8174, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 21300000, guid: 3d882e7a332132b40a69cfb771cf6cef, type: 3}
-    - m_Name: bailey_idleanim4
-      m_Hash: 467151398
-      m_Sprite: {fileID: 21300000, guid: e1cf37d5547121340b7ffd58cbbbd93d, type: 3}
+      m_SpriteOverride: {fileID: 21300000, guid: 87629bbffdce5b242ae47f1ec2dd8174, type: 3}
+    - m_Name: idleanim4
+      m_Hash: 521009749
+      m_Sprite: {fileID: 21300000, guid: 18e1858d5d3df864cb397636bedbaf71, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 21300000, guid: e1cf37d5547121340b7ffd58cbbbd93d, type: 3}
-    - m_Name: bailey_idleanim5
-      m_Hash: 752818864
-      m_Sprite: {fileID: 21300000, guid: 1d5a99c638b5bc64982190ea6c4192e1, type: 3}
+      m_SpriteOverride: {fileID: 21300000, guid: 18e1858d5d3df864cb397636bedbaf71, type: 3}
+    - m_Name: idleanim5
+      m_Hash: 671795907
+      m_Sprite: {fileID: 21300000, guid: 4f6f68996923fc04fb13fd650c9d502a, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 21300000, guid: 1d5a99c638b5bc64982190ea6c4192e1, type: 3}
-    - m_Name: bailey_idleanim6
-      m_Hash: 903236362
-      m_Sprite: {fileID: 21300000, guid: 48d0040902428114796bb2f51502399d, type: 3}
+      m_SpriteOverride: {fileID: 21300000, guid: 4f6f68996923fc04fb13fd650c9d502a, type: 3}
+    - m_Name: idleanim6
+      m_Hash: 822319993
+      m_Sprite: {fileID: 21300000, guid: e879e073fc2277c48b2843fb399ad323, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 21300000, guid: 48d0040902428114796bb2f51502399d, type: 3}
-    - m_Name: bailey_idleanim7
-      m_Hash: 47283100
-      m_Sprite: {fileID: 21300000, guid: 31f39b02bcbd05b42b1ac6fab75d012a, type: 3}
+      m_SpriteOverride: {fileID: 21300000, guid: e879e073fc2277c48b2843fb399ad323, type: 3}
+    - m_Name: idleanim7
+      m_Hash: 100969455
+      m_Sprite: {fileID: 21300000, guid: 7e8588d8bf2a0c0448b21f9eb2f7727c, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 21300000, guid: 31f39b02bcbd05b42b1ac6fab75d012a, type: 3}
+      m_SpriteOverride: {fileID: 21300000, guid: 7e8588d8bf2a0c0448b21f9eb2f7727c, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 7
   - m_Name: Walk
     m_Hash: 765711723
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: bailey_spritesheet_0
-      m_Hash: 476998309
-      m_Sprite: {fileID: 1591223697, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
+    - m_Name: spritesheet_0
+      m_Hash: 1056384644
+      m_Sprite: {fileID: 31346954, guid: 981009de9b48d28419f8279753f28179, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 1591223697, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
-    - m_Name: bailey_spritesheet_1
-      m_Hash: 728324659
-      m_Sprite: {fileID: 1251460413, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
+      m_SpriteOverride: {fileID: 31346954, guid: 981009de9b48d28419f8279753f28179, type: 3}
+    - m_Name: spritesheet_1
+      m_Hash: 166729234
+      m_Sprite: {fileID: -10708199, guid: 981009de9b48d28419f8279753f28179, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 1251460413, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
-    - m_Name: bailey_spritesheet_2
-      m_Hash: 845155209
-      m_Sprite: {fileID: 511079324, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
+      m_SpriteOverride: {fileID: -10708199, guid: 981009de9b48d28419f8279753f28179, type: 3}
+    - m_Name: spritesheet_2
+      m_Hash: 284772264
+      m_Sprite: {fileID: 1512152843, guid: 981009de9b48d28419f8279753f28179, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 511079324, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
-    - m_Name: bailey_spritesheet_3
-      m_Hash: 90651423
-      m_Sprite: {fileID: -1389442901, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
+      m_SpriteOverride: {fileID: 1512152843, guid: 981009de9b48d28419f8279753f28179, type: 3}
+    - m_Name: spritesheet_3
+      m_Hash: 670988094
+      m_Sprite: {fileID: 1187321503, guid: 981009de9b48d28419f8279753f28179, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: -1389442901, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
+      m_SpriteOverride: {fileID: 1187321503, guid: 981009de9b48d28419f8279753f28179, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
   - m_Name: Jump
     m_Hash: 125937960
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: bailey_spritesheet_2
-      m_Hash: 845155209
-      m_Sprite: {fileID: 511079324, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
+    - m_Name: spritesheet_2
+      m_Hash: 284772264
+      m_Sprite: {fileID: 1512152843, guid: 981009de9b48d28419f8279753f28179, type: 3}
       m_FromMain: 0
-      m_SpriteOverride: {fileID: 511079324, guid: e23aac7470402e14da9a73f8d55d486b, type: 3}
+      m_SpriteOverride: {fileID: 1512152843, guid: 981009de9b48d28419f8279753f28179, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 639069672630232516
+  m_ModificationHash: 639070238645566069
   m_Version: 1

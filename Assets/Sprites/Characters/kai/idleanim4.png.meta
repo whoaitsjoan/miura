@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 19f175b05bc10644fbf03bde55515730
+guid: cd1063a101c01cc4c84ec7a8ae0c1159
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -136,89 +136,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kai_spritesheet_0
+      name: kai_spritesheet-export_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 48
-        height: 48
+        width: 46
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 208624e4add60fb41aeffb21e3b6ec13
-      internalID: 1610842195
+      spriteID: 6502e81a13313db00800000000000000
+      internalID: 852045858387927126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kai_spritesheet_1
+      name: kai_spritesheet-export_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 49
         y: 0
-        width: 48
-        height: 48
+        width: 46
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fa32d8ae118d02f458069569065f44ee
-      internalID: -1290420765
+      spriteID: 1ba8664d1e47e4680800000000000000
+      internalID: -8768942911163823439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kai_spritesheet_2
+      name: kai_spritesheet-export_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 48
-        height: 48
+        x: 97
+        y: 1
+        width: 46
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: facd90b97946d7c4bad4ab00376e4fc6
-      internalID: 1920673648
+      spriteID: 226bb8d06fe25b660800000000000000
+      internalID: 7400873196977370658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kai_spritesheet_3
+      name: kai_spritesheet-export_3
       rect:
         serializedVersion: 2
-        x: 144
+        x: 145
         y: 0
-        width: 48
-        height: 48
+        width: 46
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8c8d1d5025ce2141b2fdcc78df197ec
-      internalID: 55066598
+      spriteID: 78b48c494353b6520800000000000000
+      internalID: 2696307301862099847
       vertices: []
       indices: 
       edges: []
@@ -227,7 +227,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 25a8a9c5504353849a299010cbb810a4
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -235,14 +235,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":true,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      kai_spritesheet_0: 1610842195
-      kai_spritesheet_1: -1290420765
-      kai_spritesheet_2: 1920673648
-      kai_spritesheet_3: 55066598
+      kai_spritesheet-export_0: 852045858387927126
+      kai_spritesheet-export_1: -8768942911163823439
+      kai_spritesheet-export_2: 7400873196977370658
+      kai_spritesheet-export_3: 2696307301862099847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

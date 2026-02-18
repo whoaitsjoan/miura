@@ -39,6 +39,12 @@ public class PlayerAnimations : MonoBehaviour
     {
         //stateInfo is going to be used to check if an animation has finished or not
         AnimatorStateInfo stateInfo = _animator.GetCurrentAnimatorStateInfo(0);
+
+        if (rb.linearVelocity.x < 0 || rb.linearVelocity.x > 0)
+        {
+            Debug.Log("Turn check!");
+            TurnCheck();
+        }
         //as long as we are not walking or jumping, the timer for an idle anim counts up
         if (!_isIdle && _animator.GetBool("isWalking") == false 
         && _animator.GetBool("isJumping") == false)
@@ -104,11 +110,12 @@ public class PlayerAnimations : MonoBehaviour
         _animator.SetBool("isWalking", true);
         //if the player is moving at all based on the velocity
         //then we need to handle turning the player
-        if (rb.linearVelocity.x < 0 || rb.linearVelocity.x > 0)
+        /*if (rb.linearVelocity.x < 0 || rb.linearVelocity.x > 0)
         {
             Debug.Log("Turn check!");
             TurnCheck();
         }
+        */
         
     }
 

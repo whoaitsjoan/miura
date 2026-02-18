@@ -24,11 +24,14 @@ public class BaileyController : MonoBehaviour
     [SerializeField] private float flyCooldown = 0.1f;
     private bool onGround;
     private Vector2 direction;
-    bool isFacingRight;
+    //bool isFacingRight;
     float horizontalMovement;
     bool isFlying; 
     bool canFly = true;
     int flyCycle = 0;
+
+    private PlayerAnimations playerAnimations;
+    private CharacterSwitch characterSwitch;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +39,8 @@ public class BaileyController : MonoBehaviour
         input = new InputSystem_Actions();
         rb = GetComponent<Rigidbody2D>();
         ground = GetComponent<GroundCheck>();   
+        characterSwitch = GetComponent<CharacterSwitch>();  
+        playerAnimations = GetComponent<PlayerAnimations>();        
 
         input.Bailey.Enable();
 
@@ -45,7 +50,7 @@ public class BaileyController : MonoBehaviour
     }
 
     void Update(){
-        Flip();
+        //Flip();
         if (!isFlying)
         {
             Vector2 newVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
@@ -60,9 +65,11 @@ public class BaileyController : MonoBehaviour
         {
             flyCycle = 1;
         }
+        if (onGround && rb.linearVelocity.y == 0)
+        playerAnimations.NotJumping();
     }
 
-  private void Flip(){
+  /*private void Flip(){
         if (isFacingRight && rb.linearVelocity.x < -0.1f){
             isFacingRight = false;
             Vector3 ls = transform.localScale;
@@ -76,12 +83,14 @@ public class BaileyController : MonoBehaviour
             transform.localScale = ls;
         }
     }
+    */
 
     private void OnJump(InputValue inputValue){
 
         if (onGround && inputValue.isPressed)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            playerAnimations.Jumping();
         }    
         if (onGround && !inputValue.isPressed)
         {
@@ -91,9 +100,13 @@ public class BaileyController : MonoBehaviour
 
     private void OnMove(InputValue inputValue){
         horizontalMovement = inputValue.Get<Vector2>().x;
+        playerAnimations.Walking();
+
+        if (horizontalMovement == 0)
+        playerAnimations.NotWalking();        
     }
 
-      private void Gravity()
+    private void Gravity()
     {
         if(rb.linearVelocity.y < 0)
         {
@@ -103,6 +116,24 @@ public class BaileyController : MonoBehaviour
         else
         {
             rb.gravityScale = baseGravity;
+        }
+    }
+
+    private void OnKaiSwitch(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+        Debug.Log("Switching to Kai!");
+        characterSwitch.KaiSwitch();
+        }
+    }
+
+    private void OnOllieSwitch(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+        Debug.Log("Switching to Ollie!");
+        characterSwitch.OllieSwitch();
         }
     }
 

@@ -28,6 +28,7 @@ public class KaiController : MonoBehaviour
     float horizontalMovement;
 
     private PlayerAnimations playerAnimations;
+    private CharacterSwitch characterSwitch;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,7 +36,8 @@ public class KaiController : MonoBehaviour
         input = new InputSystem_Actions();
         rb = GetComponent<Rigidbody2D>();
         ground = GetComponent<GroundCheck>(); 
-        playerAnimations = GetComponent<PlayerAnimations>();   
+        playerAnimations = GetComponent<PlayerAnimations>();
+        characterSwitch = GetComponent<CharacterSwitch>();     
 
         input.Kai.Enable();
         input.Ollie.Disable();
@@ -122,6 +124,24 @@ public class KaiController : MonoBehaviour
         if (horizontalMovement == 0)
         playerAnimations.NotWalking();
     }
+
+    private void OnOllieSwitch(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+        Debug.Log("Switching to Ollie!");
+        characterSwitch.OllieSwitch();
+        }
+    }
+
+    private void OnBaileySwitch(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+        Debug.Log("Switching to Bailey!");
+        characterSwitch.BaileySwitch();
+        }
+    }   
 
     private IEnumerator startPound()
     {

@@ -42,7 +42,7 @@ public class CharacterSwitch : MonoBehaviour
         playerInput.defaultActionMap = "Kai";
 
         spriteLibrary.spriteLibraryAsset = (SpriteLibraryAsset)AssetDatabase.LoadAssetAtPath("Assets/Sprites/Characters/SpriteLibraries/Kai.spriteLib", typeof (SpriteLibraryAsset));
-        spriteResolver.SetCategoryAndLabel("Default", "kai_spritesheet_0");
+        spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
         kaiController.enabled = true;
         if (ollieController.enabled)
@@ -55,11 +55,63 @@ public class CharacterSwitch : MonoBehaviour
 
     public void OllieSwitch()
     {
-        
+        var currentResolverCategory = spriteResolver.GetCategory();
+        if (ollieController.enabled)
+        {
+            Debug.LogError("You're already Ollie!");
+            return;
+        }
+        /*if (!GameManager.instance.OllieSaved)
+        {
+            Debug.LogError("You haven't saved Ollie yet!");
+            return;
+        }
+        */
+
+        else
+        {
+        playerInput.SwitchCurrentActionMap("Ollie");
+        playerInput.defaultActionMap = "Ollie";
+
+        spriteLibrary.spriteLibraryAsset = (SpriteLibraryAsset)AssetDatabase.LoadAssetAtPath("Assets/Sprites/Characters/SpriteLibraries/Ollie.spriteLib", typeof (SpriteLibraryAsset));
+        spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
+
+        ollieController.enabled = true;
+        if (kaiController.enabled)
+        kaiController.enabled = false;
+
+        if(baileyController.enabled)
+        baileyController.enabled = false;
+        }
     }
 
     public void BaileySwitch()
     {
-        
+        var currentResolverCategory = spriteResolver.GetCategory();
+        if (baileyController.enabled)
+        return;
+
+        /*if (!GameManager.instance.BaileySaved)
+        {
+            Debug.LogError("You haven't saved Bailey yet!");
+            return;
+        }
+        */
+
+        else
+        {
+        playerInput.SwitchCurrentActionMap("Bailey");
+        playerInput.defaultActionMap = "Bailey";
+
+        spriteLibrary.spriteLibraryAsset = (SpriteLibraryAsset)AssetDatabase.LoadAssetAtPath("Assets/Sprites/Characters/SpriteLibraries/Bailey.spriteLib", typeof (SpriteLibraryAsset));
+        spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
+
+        baileyController.enabled = true;
+        if (kaiController.enabled)
+        kaiController.enabled = false;
+
+        if(ollieController.enabled)
+        ollieController.enabled = false;
+        }
     }
 }
