@@ -47,7 +47,8 @@ public class KaiController : MonoBehaviour
         //Flip();
         if(!isPounding){
         Vector2 newVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
-        rb.linearVelocity = newVelocity;}
+        rb.linearVelocity = newVelocity;
+        }
         Gravity();
     }
 

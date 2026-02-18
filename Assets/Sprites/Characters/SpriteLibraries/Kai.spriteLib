@@ -17,8 +17,8 @@ MonoBehaviour:
     m_Hash: 753088835
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: ollie_spritesheet_0
-      m_Hash: 978005188
+    - m_Name: kai_spritesheet_0
+      m_Hash: 754574174
       m_Sprite: {fileID: 1610842195, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 1610842195, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
@@ -103,5 +103,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 1
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 639069671707538950
+  m_ModificationHash: 639069739569937565
   m_Version: 1

@@ -1062,6 +1062,9 @@ GameObject:
   - component: {fileID: 1206911736}
   - component: {fileID: 1206911735}
   - component: {fileID: 1206911737}
+  - component: {fileID: 1206911738}
+  - component: {fileID: 1206911739}
+  - component: {fileID: 1206911740}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1116,7 +1119,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1610842195, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
+  m_Sprite: {fileID: 666611745, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1288,7 +1291,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Kai
+  m_DefaultActionMap: Ollie
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!95 &1206911732
@@ -1342,7 +1345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 9c0608783e2f03545b076e9b6be88acd, type: 3}
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 83152a6ee7f123440beed918ff089229, type: 3}
 --- !u!114 &1206911736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,10 +1358,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
-  m_CategoryHash: 6.4580854e-12
+  m_CategoryHash: 1.8625731e-11
   m_labelHash: 0.0007750506
   m_SpriteKey: 0
-  m_SpriteHash: 796823859
+  m_SpriteHash: 69664418
 --- !u!114 &1206911737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1366,7 +1369,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206911723}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8531d9349895000439a71a36f9ff2fc8, type: 3}
   m_Name: 
@@ -1379,6 +1382,102 @@ MonoBehaviour:
   poundForce: 2.5
   poundDuration: 0.1
   poundCooldown: 0.1
+--- !u!114 &1206911738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206911723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd02918ca62cd04ba5196a6d7b0cc89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSwitch
+--- !u!114 &1206911739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206911723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb09f840d6398ec4c993b210101e798f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OllieController
+  moveSpeed: 4.59
+  jumpForce: 10
+  baseGravity: 2
+  maxFallSpeed: 18
+  fallSpeedMultiplier: 2
+  dashSpeed: 20
+  dashDuration: 0.1
+  dashCooldown: 0.1
+--- !u!114 &1206911740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206911723}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a77f7ef4ec150648a98f4168eb65089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BaileyController
+  moveSpeed: 4.59
+  jumpForce: 10
+  baseGravity: 2
+  maxFallSpeed: 18
+  fallSpeedMultiplier: 2
+  flyForce: 0
+  flyDuration: 0.1
+  flyCooldown: 0.1
+--- !u!1 &1268405972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1268405974}
+  - component: {fileID: 1268405973}
+  m_Layer: 0
+  m_Name: GAMEMANAGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1268405973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268405972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb7da27b7cb52a49894134c7a3c7f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!4 &1268405974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268405972}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.80439, y: 0.90089, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1875493527
 GameObject:
   m_ObjectHideFlags: 0
@@ -3385,3 +3484,4 @@ SceneRoots:
   - {fileID: 239045570}
   - {fileID: 593892094}
   - {fileID: 579874412275774047}
+  - {fileID: 1268405974}

@@ -129,7 +129,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Previous"",
+                    ""name"": ""OllieSwitch"",
                     ""type"": ""Button"",
                     ""id"": ""a56e7c89-4f41-46cc-a479-bbe2c5ab44db"",
                     ""expectedControlType"": """",
@@ -138,7 +138,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Next"",
+                    ""name"": ""BaileySwitch"",
                     ""type"": ""Button"",
                     ""id"": ""6988567f-94bd-4ea7-a9b3-cbef6a917cd4"",
                     ""expectedControlType"": """",
@@ -272,11 +272,11 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""a156f9cb-a705-4d8e-92fc-134fe1be5b2f"",
-                    ""path"": ""<Keyboard>/1"",
+                    ""path"": ""<Keyboard>/2"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Previous"",
+                    ""action"": ""OllieSwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -287,18 +287,18 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Previous"",
+                    ""action"": ""OllieSwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""8542a6bc-f32a-4a8b-aba9-9f328d0ed992"",
-                    ""path"": ""<Keyboard>/2"",
+                    ""path"": ""<Keyboard>/3"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Next"",
+                    ""action"": ""BaileySwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -309,7 +309,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Next"",
+                    ""action"": ""BaileySwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -378,7 +378,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Previous"",
+                    ""name"": ""KaiSwitch"",
                     ""type"": ""Button"",
                     ""id"": ""ffe55546-a615-447a-9f14-0fc1821dc140"",
                     ""expectedControlType"": """",
@@ -387,7 +387,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Next"",
+                    ""name"": ""BaileySwitch"",
                     ""type"": ""Button"",
                     ""id"": ""0c71c799-3c9b-4439-87f5-18c76f5dfcd6"",
                     ""expectedControlType"": """",
@@ -547,7 +547,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Previous"",
+                    ""action"": ""KaiSwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -558,18 +558,18 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Previous"",
+                    ""action"": ""KaiSwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""3473289b-d3b0-432f-88f1-812717010a95"",
-                    ""path"": ""<Keyboard>/2"",
+                    ""path"": ""<Keyboard>/3"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Next"",
+                    ""action"": ""BaileySwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -580,7 +580,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Next"",
+                    ""action"": ""BaileySwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -627,7 +627,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Previous"",
+                    ""name"": ""KaiSwitch"",
                     ""type"": ""Button"",
                     ""id"": ""2ca02432-a107-4b5b-bbd8-92b656f68a34"",
                     ""expectedControlType"": """",
@@ -636,7 +636,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Next"",
+                    ""name"": ""OllieSwitch"",
                     ""type"": ""Button"",
                     ""id"": ""0182ecbf-aa36-4dd1-a1cb-5c89dfb318d3"",
                     ""expectedControlType"": """",
@@ -796,7 +796,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Previous"",
+                    ""action"": ""KaiSwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -807,7 +807,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Previous"",
+                    ""action"": ""KaiSwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -818,7 +818,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Next"",
+                    ""action"": ""OllieSwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -829,7 +829,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Next"",
+                    ""action"": ""OllieSwitch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -933,24 +933,24 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Kai_Jump = m_Kai.FindAction("Jump", throwIfNotFound: true);
         m_Kai_Pound = m_Kai.FindAction("Pound", throwIfNotFound: true);
         m_Kai_Interact = m_Kai.FindAction("Interact", throwIfNotFound: true);
-        m_Kai_Previous = m_Kai.FindAction("Previous", throwIfNotFound: true);
-        m_Kai_Next = m_Kai.FindAction("Next", throwIfNotFound: true);
+        m_Kai_OllieSwitch = m_Kai.FindAction("OllieSwitch", throwIfNotFound: true);
+        m_Kai_BaileySwitch = m_Kai.FindAction("BaileySwitch", throwIfNotFound: true);
         // Ollie
         m_Ollie = asset.FindActionMap("Ollie", throwIfNotFound: true);
         m_Ollie_Move = m_Ollie.FindAction("Move", throwIfNotFound: true);
         m_Ollie_Jump = m_Ollie.FindAction("Jump", throwIfNotFound: true);
         m_Ollie_Interact = m_Ollie.FindAction("Interact", throwIfNotFound: true);
         m_Ollie_Dash = m_Ollie.FindAction("Dash", throwIfNotFound: true);
-        m_Ollie_Previous = m_Ollie.FindAction("Previous", throwIfNotFound: true);
-        m_Ollie_Next = m_Ollie.FindAction("Next", throwIfNotFound: true);
+        m_Ollie_KaiSwitch = m_Ollie.FindAction("KaiSwitch", throwIfNotFound: true);
+        m_Ollie_BaileySwitch = m_Ollie.FindAction("BaileySwitch", throwIfNotFound: true);
         // Bailey
         m_Bailey = asset.FindActionMap("Bailey", throwIfNotFound: true);
         m_Bailey_Move = m_Bailey.FindAction("Move", throwIfNotFound: true);
         m_Bailey_Jump = m_Bailey.FindAction("Jump", throwIfNotFound: true);
         m_Bailey_Interact = m_Bailey.FindAction("Interact", throwIfNotFound: true);
         m_Bailey_Fly = m_Bailey.FindAction("Fly", throwIfNotFound: true);
-        m_Bailey_Previous = m_Bailey.FindAction("Previous", throwIfNotFound: true);
-        m_Bailey_Next = m_Bailey.FindAction("Next", throwIfNotFound: true);
+        m_Bailey_KaiSwitch = m_Bailey.FindAction("KaiSwitch", throwIfNotFound: true);
+        m_Bailey_OllieSwitch = m_Bailey.FindAction("OllieSwitch", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Newaction = m_UI.FindAction("New action", throwIfNotFound: true);
@@ -1041,8 +1041,8 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Kai_Jump;
     private readonly InputAction m_Kai_Pound;
     private readonly InputAction m_Kai_Interact;
-    private readonly InputAction m_Kai_Previous;
-    private readonly InputAction m_Kai_Next;
+    private readonly InputAction m_Kai_OllieSwitch;
+    private readonly InputAction m_Kai_BaileySwitch;
     /// <summary>
     /// Provides access to input actions defined in input action map "Kai".
     /// </summary>
@@ -1071,13 +1071,13 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Interact => m_Wrapper.m_Kai_Interact;
         /// <summary>
-        /// Provides access to the underlying input action "Kai/Previous".
+        /// Provides access to the underlying input action "Kai/OllieSwitch".
         /// </summary>
-        public InputAction @Previous => m_Wrapper.m_Kai_Previous;
+        public InputAction @OllieSwitch => m_Wrapper.m_Kai_OllieSwitch;
         /// <summary>
-        /// Provides access to the underlying input action "Kai/Next".
+        /// Provides access to the underlying input action "Kai/BaileySwitch".
         /// </summary>
-        public InputAction @Next => m_Wrapper.m_Kai_Next;
+        public InputAction @BaileySwitch => m_Wrapper.m_Kai_BaileySwitch;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1116,12 +1116,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
-            @Previous.started += instance.OnPrevious;
-            @Previous.performed += instance.OnPrevious;
-            @Previous.canceled += instance.OnPrevious;
-            @Next.started += instance.OnNext;
-            @Next.performed += instance.OnNext;
-            @Next.canceled += instance.OnNext;
+            @OllieSwitch.started += instance.OnOllieSwitch;
+            @OllieSwitch.performed += instance.OnOllieSwitch;
+            @OllieSwitch.canceled += instance.OnOllieSwitch;
+            @BaileySwitch.started += instance.OnBaileySwitch;
+            @BaileySwitch.performed += instance.OnBaileySwitch;
+            @BaileySwitch.canceled += instance.OnBaileySwitch;
         }
 
         /// <summary>
@@ -1145,12 +1145,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
-            @Previous.started -= instance.OnPrevious;
-            @Previous.performed -= instance.OnPrevious;
-            @Previous.canceled -= instance.OnPrevious;
-            @Next.started -= instance.OnNext;
-            @Next.performed -= instance.OnNext;
-            @Next.canceled -= instance.OnNext;
+            @OllieSwitch.started -= instance.OnOllieSwitch;
+            @OllieSwitch.performed -= instance.OnOllieSwitch;
+            @OllieSwitch.canceled -= instance.OnOllieSwitch;
+            @BaileySwitch.started -= instance.OnBaileySwitch;
+            @BaileySwitch.performed -= instance.OnBaileySwitch;
+            @BaileySwitch.canceled -= instance.OnBaileySwitch;
         }
 
         /// <summary>
@@ -1192,8 +1192,8 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Ollie_Jump;
     private readonly InputAction m_Ollie_Interact;
     private readonly InputAction m_Ollie_Dash;
-    private readonly InputAction m_Ollie_Previous;
-    private readonly InputAction m_Ollie_Next;
+    private readonly InputAction m_Ollie_KaiSwitch;
+    private readonly InputAction m_Ollie_BaileySwitch;
     /// <summary>
     /// Provides access to input actions defined in input action map "Ollie".
     /// </summary>
@@ -1222,13 +1222,13 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Dash => m_Wrapper.m_Ollie_Dash;
         /// <summary>
-        /// Provides access to the underlying input action "Ollie/Previous".
+        /// Provides access to the underlying input action "Ollie/KaiSwitch".
         /// </summary>
-        public InputAction @Previous => m_Wrapper.m_Ollie_Previous;
+        public InputAction @KaiSwitch => m_Wrapper.m_Ollie_KaiSwitch;
         /// <summary>
-        /// Provides access to the underlying input action "Ollie/Next".
+        /// Provides access to the underlying input action "Ollie/BaileySwitch".
         /// </summary>
-        public InputAction @Next => m_Wrapper.m_Ollie_Next;
+        public InputAction @BaileySwitch => m_Wrapper.m_Ollie_BaileySwitch;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1267,12 +1267,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Dash.started += instance.OnDash;
             @Dash.performed += instance.OnDash;
             @Dash.canceled += instance.OnDash;
-            @Previous.started += instance.OnPrevious;
-            @Previous.performed += instance.OnPrevious;
-            @Previous.canceled += instance.OnPrevious;
-            @Next.started += instance.OnNext;
-            @Next.performed += instance.OnNext;
-            @Next.canceled += instance.OnNext;
+            @KaiSwitch.started += instance.OnKaiSwitch;
+            @KaiSwitch.performed += instance.OnKaiSwitch;
+            @KaiSwitch.canceled += instance.OnKaiSwitch;
+            @BaileySwitch.started += instance.OnBaileySwitch;
+            @BaileySwitch.performed += instance.OnBaileySwitch;
+            @BaileySwitch.canceled += instance.OnBaileySwitch;
         }
 
         /// <summary>
@@ -1296,12 +1296,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Dash.started -= instance.OnDash;
             @Dash.performed -= instance.OnDash;
             @Dash.canceled -= instance.OnDash;
-            @Previous.started -= instance.OnPrevious;
-            @Previous.performed -= instance.OnPrevious;
-            @Previous.canceled -= instance.OnPrevious;
-            @Next.started -= instance.OnNext;
-            @Next.performed -= instance.OnNext;
-            @Next.canceled -= instance.OnNext;
+            @KaiSwitch.started -= instance.OnKaiSwitch;
+            @KaiSwitch.performed -= instance.OnKaiSwitch;
+            @KaiSwitch.canceled -= instance.OnKaiSwitch;
+            @BaileySwitch.started -= instance.OnBaileySwitch;
+            @BaileySwitch.performed -= instance.OnBaileySwitch;
+            @BaileySwitch.canceled -= instance.OnBaileySwitch;
         }
 
         /// <summary>
@@ -1343,8 +1343,8 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Bailey_Jump;
     private readonly InputAction m_Bailey_Interact;
     private readonly InputAction m_Bailey_Fly;
-    private readonly InputAction m_Bailey_Previous;
-    private readonly InputAction m_Bailey_Next;
+    private readonly InputAction m_Bailey_KaiSwitch;
+    private readonly InputAction m_Bailey_OllieSwitch;
     /// <summary>
     /// Provides access to input actions defined in input action map "Bailey".
     /// </summary>
@@ -1373,13 +1373,13 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Fly => m_Wrapper.m_Bailey_Fly;
         /// <summary>
-        /// Provides access to the underlying input action "Bailey/Previous".
+        /// Provides access to the underlying input action "Bailey/KaiSwitch".
         /// </summary>
-        public InputAction @Previous => m_Wrapper.m_Bailey_Previous;
+        public InputAction @KaiSwitch => m_Wrapper.m_Bailey_KaiSwitch;
         /// <summary>
-        /// Provides access to the underlying input action "Bailey/Next".
+        /// Provides access to the underlying input action "Bailey/OllieSwitch".
         /// </summary>
-        public InputAction @Next => m_Wrapper.m_Bailey_Next;
+        public InputAction @OllieSwitch => m_Wrapper.m_Bailey_OllieSwitch;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1418,12 +1418,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Fly.started += instance.OnFly;
             @Fly.performed += instance.OnFly;
             @Fly.canceled += instance.OnFly;
-            @Previous.started += instance.OnPrevious;
-            @Previous.performed += instance.OnPrevious;
-            @Previous.canceled += instance.OnPrevious;
-            @Next.started += instance.OnNext;
-            @Next.performed += instance.OnNext;
-            @Next.canceled += instance.OnNext;
+            @KaiSwitch.started += instance.OnKaiSwitch;
+            @KaiSwitch.performed += instance.OnKaiSwitch;
+            @KaiSwitch.canceled += instance.OnKaiSwitch;
+            @OllieSwitch.started += instance.OnOllieSwitch;
+            @OllieSwitch.performed += instance.OnOllieSwitch;
+            @OllieSwitch.canceled += instance.OnOllieSwitch;
         }
 
         /// <summary>
@@ -1447,12 +1447,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Fly.started -= instance.OnFly;
             @Fly.performed -= instance.OnFly;
             @Fly.canceled -= instance.OnFly;
-            @Previous.started -= instance.OnPrevious;
-            @Previous.performed -= instance.OnPrevious;
-            @Previous.canceled -= instance.OnPrevious;
-            @Next.started -= instance.OnNext;
-            @Next.performed -= instance.OnNext;
-            @Next.canceled -= instance.OnNext;
+            @KaiSwitch.started -= instance.OnKaiSwitch;
+            @KaiSwitch.performed -= instance.OnKaiSwitch;
+            @KaiSwitch.canceled -= instance.OnKaiSwitch;
+            @OllieSwitch.started -= instance.OnOllieSwitch;
+            @OllieSwitch.performed -= instance.OnOllieSwitch;
+            @OllieSwitch.canceled -= instance.OnOllieSwitch;
         }
 
         /// <summary>
@@ -1683,19 +1683,19 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInteract(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Previous" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "OllieSwitch" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnPrevious(InputAction.CallbackContext context);
+        void OnOllieSwitch(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Next" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "BaileySwitch" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnNext(InputAction.CallbackContext context);
+        void OnBaileySwitch(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Ollie" which allows adding and removing callbacks.
@@ -1733,19 +1733,19 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnDash(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Previous" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "KaiSwitch" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnPrevious(InputAction.CallbackContext context);
+        void OnKaiSwitch(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Next" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "BaileySwitch" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnNext(InputAction.CallbackContext context);
+        void OnBaileySwitch(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Bailey" which allows adding and removing callbacks.
@@ -1783,19 +1783,19 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnFly(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Previous" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "KaiSwitch" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnPrevious(InputAction.CallbackContext context);
+        void OnKaiSwitch(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Next" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "OllieSwitch" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnNext(InputAction.CallbackContext context);
+        void OnOllieSwitch(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

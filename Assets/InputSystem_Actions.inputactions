@@ -43,7 +43,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Previous",
+                    "name": "OllieSwitch",
                     "type": "Button",
                     "id": "a56e7c89-4f41-46cc-a479-bbe2c5ab44db",
                     "expectedControlType": "",
@@ -52,7 +52,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Next",
+                    "name": "BaileySwitch",
                     "type": "Button",
                     "id": "6988567f-94bd-4ea7-a9b3-cbef6a917cd4",
                     "expectedControlType": "",
@@ -186,11 +186,11 @@
                 {
                     "name": "",
                     "id": "a156f9cb-a705-4d8e-92fc-134fe1be5b2f",
-                    "path": "<Keyboard>/1",
+                    "path": "<Keyboard>/2",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Previous",
+                    "action": "OllieSwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -201,18 +201,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Previous",
+                    "action": "OllieSwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "8542a6bc-f32a-4a8b-aba9-9f328d0ed992",
-                    "path": "<Keyboard>/2",
+                    "path": "<Keyboard>/3",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Next",
+                    "action": "BaileySwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -223,7 +223,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Next",
+                    "action": "BaileySwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -292,7 +292,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Previous",
+                    "name": "KaiSwitch",
                     "type": "Button",
                     "id": "ffe55546-a615-447a-9f14-0fc1821dc140",
                     "expectedControlType": "",
@@ -301,7 +301,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Next",
+                    "name": "BaileySwitch",
                     "type": "Button",
                     "id": "0c71c799-3c9b-4439-87f5-18c76f5dfcd6",
                     "expectedControlType": "",
@@ -461,7 +461,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Previous",
+                    "action": "KaiSwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -472,18 +472,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Previous",
+                    "action": "KaiSwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "3473289b-d3b0-432f-88f1-812717010a95",
-                    "path": "<Keyboard>/2",
+                    "path": "<Keyboard>/3",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Next",
+                    "action": "BaileySwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -494,7 +494,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Next",
+                    "action": "BaileySwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -541,7 +541,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Previous",
+                    "name": "KaiSwitch",
                     "type": "Button",
                     "id": "2ca02432-a107-4b5b-bbd8-92b656f68a34",
                     "expectedControlType": "",
@@ -550,7 +550,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Next",
+                    "name": "OllieSwitch",
                     "type": "Button",
                     "id": "0182ecbf-aa36-4dd1-a1cb-5c89dfb318d3",
                     "expectedControlType": "",
@@ -710,7 +710,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Previous",
+                    "action": "KaiSwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -721,7 +721,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Previous",
+                    "action": "KaiSwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -732,7 +732,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Next",
+                    "action": "OllieSwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -743,7 +743,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Next",
+                    "action": "OllieSwitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

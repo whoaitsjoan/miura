@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.TextCore.Text;
 
 public class OllieController : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class OllieController : MonoBehaviour
     float horizontalMovement;
 
     private PlayerAnimations playerAnimations;
+    private CharacterSwitch characterSwitch;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,7 +35,9 @@ public class OllieController : MonoBehaviour
     {
         input = new InputSystem_Actions();
         rb = GetComponent<Rigidbody2D>();
-        ground = GetComponent<GroundCheck>();   
+        ground = GetComponent<GroundCheck>(); 
+        characterSwitch = GetComponent<CharacterSwitch>();  
+        playerAnimations = GetComponent<PlayerAnimations>();
 
         input.Ollie.Enable();
 
@@ -111,6 +115,15 @@ public class OllieController : MonoBehaviour
         if(canDash){
             Debug.Log("dash");
             StartCoroutine(DashCoroutine());
+        }
+    }
+
+    private void OnKaiSwitch(InputValue inputValue)
+    {
+        if (inputValue.isPressed)
+        {
+        Debug.Log("Switching!");
+        characterSwitch.KaiSwitch();
         }
     }
 
