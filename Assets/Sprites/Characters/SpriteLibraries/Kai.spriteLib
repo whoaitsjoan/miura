@@ -17,13 +17,13 @@ MonoBehaviour:
     m_Hash: 753088835
     m_CategoryList: []
     m_OverrideEntries:
-    - m_Name: kai_spritesheet_0
-      m_Hash: 754574174
+    - m_Name: ollie_spritesheet_0
+      m_Hash: 978005188
       m_Sprite: {fileID: 1610842195, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 1610842195, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 0
+    m_EntryOverrideCount: 1
   - m_Name: Idle
     m_Hash: 1008081451
     m_CategoryList: []
@@ -64,7 +64,7 @@ MonoBehaviour:
       m_FromMain: 0
       m_SpriteOverride: {fileID: 21300000, guid: 0471abe54d81b084a8d775e68febf87b, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 0
+    m_EntryOverrideCount: 7
   - m_Name: Walk
     m_Hash: 765711723
     m_CategoryList: []
@@ -90,7 +90,7 @@ MonoBehaviour:
       m_FromMain: 0
       m_SpriteOverride: {fileID: 55066598, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
     m_FromMain: 0
-    m_EntryOverrideCount: 0
+    m_EntryOverrideCount: 4
   - m_Name: Jump
     m_Hash: 125937960
     m_CategoryList: []
@@ -102,6 +102,6 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: 1920673648, guid: 19f175b05bc10644fbf03bde55515730, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 1
-  m_PrimaryLibraryGUID: 46219017928b2cc4fa7025eada80ac6a
-  m_ModificationHash: 639067871448725307
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 639069671707538950
   m_Version: 1

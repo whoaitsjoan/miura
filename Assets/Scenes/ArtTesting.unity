@@ -1062,7 +1062,6 @@ GameObject:
   - component: {fileID: 1206911736}
   - component: {fileID: 1206911735}
   - component: {fileID: 1206911737}
-  - component: {fileID: 1206911738}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1343,7 +1342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 35cbb7029997cec45ad9eb10699a4750, type: 3}
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 9c0608783e2f03545b076e9b6be88acd, type: 3}
 --- !u!114 &1206911736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1357,9 +1356,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 6.4580854e-12
-  m_labelHash: 7.1022485e-12
+  m_labelHash: 0.0007750506
   m_SpriteKey: 0
-  m_SpriteHash: 693605405
+  m_SpriteHash: 796823859
 --- !u!114 &1206911737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1372,7 +1371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8531d9349895000439a71a36f9ff2fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KaiController
-  moveSpeed: 5
+  moveSpeed: 4.59
   jumpForce: 10
   baseGravity: 2
   maxFallSpeed: 18
@@ -1380,20 +1379,6 @@ MonoBehaviour:
   poundForce: 2.5
   poundDuration: 0.1
   poundCooldown: 0.1
---- !u!114 &1206911738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206911723}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73fd5621964d47041a4b16972e71f2c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KaiController1
-  jumpForce: 2.5
-  moveSpeed: 5
 --- !u!1 &1875493527
 GameObject:
   m_ObjectHideFlags: 0
