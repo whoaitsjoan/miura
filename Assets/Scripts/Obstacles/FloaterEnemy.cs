@@ -15,7 +15,7 @@ public class FloaterEnemy : MonoBehaviour
         startPos = transform.position;
         rb = GetComponent<Rigidbody2D>();  
 
-        if (transform.rotation.y == -180f)
+        if (transform.rotation.y == 180f)
         rb.AddForce(Vector2.left);
 
         else if (transform.rotation.y == 0f)

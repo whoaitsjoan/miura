@@ -970,7 +970,7 @@ GameObject:
   - component: {fileID: 519661710}
   - component: {fileID: 519661709}
   - component: {fileID: 519661708}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KaiBlocks (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1446,7 +1446,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 1
   m_CompositeOrder: 0
-  m_Offset: {x: 16.316193, y: 1.6536369}
+  m_Offset: {x: 16.316193, y: 2.7030296}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1456,7 +1456,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 73.01916, y: 32.14711}
+  m_Size: {x: 73.01916, y: 34.2459}
   m_EdgeRadius: 0
 --- !u!4 &593892094
 Transform:
@@ -1515,19 +1515,19 @@ CompositeCollider2D:
   - m_Collider: {fileID: 593892093}
     m_ColliderPaths:
     - - X: 528257728
-        Y: 177271920
+        Y: 198259792
       - X: -201933856
-        Y: 177271920
+        Y: 198259792
       - X: -201933856
-        Y: -144199184
+        Y: -144199200
       - X: 528257728
-        Y: -144199184
+        Y: -144199200
   m_CompositePaths:
     m_Paths:
-    - - {x: 52.825745, y: -14.419919}
-      - {x: 52.825745, y: 17.727192}
-      - {x: -20.193386, y: 17.727163}
-      - {x: -20.193357, y: -14.419919}
+    - - {x: 52.825745, y: -14.41992}
+      - {x: 52.825745, y: 19.82598}
+      - {x: -20.193386, y: 19.82595}
+      - {x: -20.193357, y: -14.41992}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -2142,6 +2142,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room2
   isInDoor: 0
+  _newScene:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 874404742}
+        m_TargetAssemblyTypeName: sceneChange, Assembly-CSharp
+        m_MethodName: loadNewScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &874404743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2781,7 +2796,7 @@ GameObject:
   - component: {fileID: 1556195998}
   - component: {fileID: 1556195997}
   - component: {fileID: 1556195996}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KaiBlocks (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3082,7 +3097,7 @@ GameObject:
   - component: {fileID: 1564965309}
   - component: {fileID: 1564965308}
   - component: {fileID: 1564965307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KaiBlocks (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11705,7 +11720,7 @@ GameObject:
   - component: {fileID: 1905336422}
   m_Layer: 0
   m_Name: reset
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12061,19 +12076,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3404155365276948637, guid: 6705e37611d003445ae0fbf0be992287, type: 3}
       propertyPath: m_Size.x
-      value: 1.9267478
+      value: 1.8436065
       objectReference: {fileID: 0}
     - target: {fileID: 3404155365276948637, guid: 6705e37611d003445ae0fbf0be992287, type: 3}
       propertyPath: m_Size.y
-      value: 2.2884054
+      value: 3.1198206
       objectReference: {fileID: 0}
     - target: {fileID: 3404155365276948637, guid: 6705e37611d003445ae0fbf0be992287, type: 3}
       propertyPath: m_Offset.x
-      value: -0.4633739
+      value: -0.50494456
       objectReference: {fileID: 0}
     - target: {fileID: 3404155365276948637, guid: 6705e37611d003445ae0fbf0be992287, type: 3}
       propertyPath: m_Offset.y
-      value: -0.033905506
+      value: 0.38180208
       objectReference: {fileID: 0}
     - target: {fileID: 3546305135829534216, guid: 6705e37611d003445ae0fbf0be992287, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12129,7 +12144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7400231931697664901, guid: 6705e37611d003445ae0fbf0be992287, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -26,7 +26,51 @@ public class EnemySpawnManager : MonoBehaviour
 
     /*public void SpawnEnemies (Collider2D spawnableAreaCollider, GameObject[] enemies)
     {
+        foreach (GameObject enemy in enemies)
+        {
+            Vector2 spawnPosition = GetRandomSpawnPosition(spawnableAreaCollider);
+            GameObject spawnedEnemy = Instantiate(enemy, spawnPosition, Quaternion.identity);
+        }
+    }
+
+    private Vector2 GetRandomSpawnPosition(Collider2D spawnableAreaCollider)
+    {
+        Vector2 spawnPosition = Vector2.zero;
+        bool isSpawnPosValid = false;
+
+        int attemptCount = 0;
+        int maxAttempts = 5;
+
+        int layerToNotSpawnOn = LayerMask.NameToLayer("Ground");
+
+        while(!isSpawnPosValid && attemptCount < maxAttempts)
+        {
+            spawnPosition = GetRandomPointInCollider(spawnableAreaCollider);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(spawnPosition, 2f);
         
+
+        bool isInvalidCollision = false;
+        foreach (Collider2D collider in colliders)
+            {
+                if (collider.gameObject.layer == layerToNotSpawnOn)
+                {
+                    isInvalidCollision = true;
+                    break;
+                }
+            }
+            if (!isInvalidCollision)
+            {
+                isSpawnPosValid = true;
+            }
+            attemptCount++;
+        }
+
+        if (!isSpawnPosValid)
+        {
+            Debug.LogWarning("No valid spawn points!");
+        }
+        return spawnPosition;
+
     }
     private Vector2 GetRandomPointInCollider(Collider2D collider, float offset = 1f)
     {
