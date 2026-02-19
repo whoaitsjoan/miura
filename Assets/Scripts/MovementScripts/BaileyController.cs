@@ -11,6 +11,7 @@ public class BaileyController : MonoBehaviour
     private Rigidbody2D rb;
     private GroundCheck ground;
     [SerializeField] private float moveSpeed;
+    private Vector2 playerVelocity;
     [Header("Jump")]
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float baseGravity = 2f;
@@ -23,15 +24,15 @@ public class BaileyController : MonoBehaviour
     [SerializeField] private float flyDuration = 0.1f;
     [SerializeField] private float flyCooldown = 0.1f;
     private bool onGround;
-    private Vector2 direction;
     //bool isFacingRight;
-    float horizontalMovement;
+    float direction;
     bool isFlying; 
     bool canFly = true;
     int flyCycle = 0;
 
     private PlayerAnimations playerAnimations;
     private CharacterSwitch characterSwitch;
+    private sceneChange sceneChange;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,8 +54,8 @@ public class BaileyController : MonoBehaviour
         //Flip();
         if (!isFlying)
         {
-            Vector2 newVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
-            rb.linearVelocity = newVelocity;
+            playerVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+            rb.linearVelocity = playerVelocity;
         }
         Gravity();
     }
@@ -99,10 +100,10 @@ public class BaileyController : MonoBehaviour
     }
 
     private void OnMove(InputValue inputValue){
-        horizontalMovement = inputValue.Get<Vector2>().x;
+        direction = inputValue.Get<Vector2>().x;
         playerAnimations.Walking();
 
-        if (horizontalMovement == 0)
+        if (direction == 0)
         playerAnimations.NotWalking();        
     }
 
@@ -147,6 +148,14 @@ public class BaileyController : MonoBehaviour
         }
         
     }
+
+    private void OnInteract(InputValue inputValue)
+    {
+        if(sceneChange.isInDoor){
+            sceneChange.loadNewScene();
+        }
+    }
+
 
     private IEnumerator startFly()
     {

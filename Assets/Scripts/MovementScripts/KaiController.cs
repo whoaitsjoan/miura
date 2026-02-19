@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,12 +21,14 @@ public class KaiController : MonoBehaviour
     [SerializeField] private float poundForce = 2.5f;
      [SerializeField] private float poundDuration = 0.1f;
     [SerializeField] private float poundCooldown = 0.1f;
+
+    private sceneChange sceneChange;
     private bool onGround, isPounding;
     private int poundCycle =1;
     bool canPound = true;
-    private Vector2 direction;
+    private Vector2 playerVelocity;
     //bool isFacingRight;
-    float horizontalMovement;
+    float direction;
 
     private PlayerAnimations playerAnimations;
     private CharacterSwitch characterSwitch;
@@ -48,8 +51,8 @@ public class KaiController : MonoBehaviour
     void Update(){
         //Flip();
         if(!isPounding){
-        Vector2 newVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
-        rb.linearVelocity = newVelocity;
+        Vector2 playerVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = playerVelocity;
         }
         Gravity();
     }
@@ -118,10 +121,10 @@ public class KaiController : MonoBehaviour
     }
 
     private void OnMove(InputValue inputValue){
-        horizontalMovement = inputValue.Get<Vector2>().x;
+        direction = inputValue.Get<Vector2>().x;
         playerAnimations.Walking();
 
-        if (horizontalMovement == 0)
+        if (direction == 0)
         playerAnimations.NotWalking();
     }
 
@@ -142,6 +145,13 @@ public class KaiController : MonoBehaviour
         characterSwitch.BaileySwitch();
         }
     }   
+
+    private void OnInteract(InputValue inputValue)
+    {
+        if(sceneChange.isInDoor){
+            sceneChange.loadNewScene();
+        }
+    }
 
     private IEnumerator startPound()
     {

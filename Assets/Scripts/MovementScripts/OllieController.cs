@@ -10,6 +10,7 @@ public class OllieController : MonoBehaviour
     private Rigidbody2D rb;
     private GroundCheck ground;
     [SerializeField] private float moveSpeed;
+    private Vector2 playerVelocity;
     [Header("Jump")]
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float baseGravity = 2f;
@@ -24,10 +25,11 @@ public class OllieController : MonoBehaviour
     bool isDashing; 
     bool canDash = true;
     //bool isFacingRight = true;
-    float horizontalMovement;
+    float direction;
 
     private PlayerAnimations playerAnimations;
     private CharacterSwitch characterSwitch;
+    private sceneChange sceneChange;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -55,8 +57,8 @@ public class OllieController : MonoBehaviour
         onGround = ground.OnGround;
         if (!isDashing)
         {
-            Vector2 newVelocity = new Vector2(horizontalMovement * moveSpeed, rb.linearVelocity.y);
-            rb.linearVelocity = newVelocity;
+            playerVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+            rb.linearVelocity = playerVelocity;
         }
         if (onGround && rb.linearVelocity.y == 0)
         playerAnimations.NotJumping();
@@ -91,10 +93,10 @@ public class OllieController : MonoBehaviour
     }
 
     private void OnMove(InputValue inputValue){
-        horizontalMovement = inputValue.Get<Vector2>().x;
+        direction = inputValue.Get<Vector2>().x;
         playerAnimations.Walking();
 
-        if (horizontalMovement == 0)
+        if (direction == 0)
         playerAnimations.NotWalking();
     }
 
@@ -135,6 +137,13 @@ public class OllieController : MonoBehaviour
         characterSwitch.BaileySwitch();
         }
     }
+    private void OnInteract(InputValue inputValue)
+    {
+        if(sceneChange.isInDoor){
+            sceneChange.loadNewScene();
+        }
+    }
+
 
     private IEnumerator DashCoroutine(){
         canDash = false;
