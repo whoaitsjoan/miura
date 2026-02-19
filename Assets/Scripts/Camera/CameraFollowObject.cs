@@ -9,7 +9,7 @@ public class CameraFollowObject : MonoBehaviour
     [SerializeField] private Transform _playerTransform;
 
     [Header("Flip Rotation Stats")]
-    [SerializeField] private float _flipYRotationTime = 0.5f;
+    [SerializeField] private float _flipYRotationTime = 0.05f;
 
     private Coroutine _turnCoroutine;
 
@@ -46,7 +46,7 @@ public class CameraFollowObject : MonoBehaviour
             elapsedTime += Time.deltaTime;
 
             //this line is what actually handles lerping the y rotation
-            yRotation = Mathf.Lerp(startRotation, endRotationAmount, (elapsedTime / _flipYRotationTime));
+            yRotation = Mathf.Lerp(startRotation, endRotationAmount, elapsedTime / _flipYRotationTime);
             //and this is what makes the camera actually turn
             //gradually thoroughout this while loop
             transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
@@ -62,9 +62,9 @@ public class CameraFollowObject : MonoBehaviour
         _isFacingRight = !_isFacingRight;
 
         if (_isFacingRight)
-        return 0f;
+        return 180f;
 
         else
-        return 180f;
+        return 0f;
     }
 }

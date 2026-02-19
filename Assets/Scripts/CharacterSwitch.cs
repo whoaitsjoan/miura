@@ -41,7 +41,7 @@ public class CharacterSwitch : MonoBehaviour
         playerInput.SwitchCurrentActionMap("Kai");
         playerInput.defaultActionMap = "Kai";
 
-        spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("Assets/Resources/SpriteLibraries/Kai.spriteLib");
+        spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Kai");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
         kaiController.enabled = true;
@@ -73,7 +73,7 @@ public class CharacterSwitch : MonoBehaviour
         playerInput.SwitchCurrentActionMap("Ollie");
         playerInput.defaultActionMap = "Ollie";
 
-        spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("Assets/Resources/SpriteLibraries/Ollie.spriteLib");
+        spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Ollie");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
         ollieController.enabled = true;
@@ -103,7 +103,7 @@ public class CharacterSwitch : MonoBehaviour
         playerInput.SwitchCurrentActionMap("Bailey");
         playerInput.defaultActionMap = "Bailey";
 
-        spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("Assets/Resources/SpriteLibraries/Bailey.spriteLib");
+        spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Bailey");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
         baileyController.enabled = true;
