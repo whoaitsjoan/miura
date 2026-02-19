@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class EnemySpawnTrigger : MonoBehaviour
 {
-    [SerializeField] private GameObject[] _enemiesToSpawn;
-    [SerializeField] private Collider2D _spawnableArea;
+    //[SerializeField] private GameObject[] _enemiesToSpawn;
+    //[SerializeField] private Collider2D _spawnableArea;
     private GameObject _player;
     private Collider2D _coll;
     void Start()
@@ -19,7 +19,7 @@ public class EnemySpawnTrigger : MonoBehaviour
             Vector2 exitDir = (collision.transform.position - _coll.bounds.center).normalized;
             if(exitDir.x > 0)
             {
-                Debug.Log("spawn enemies!");
+                EnemySpawnManager.instance.SpawnEnemy();
             }
             //spawnenemies
         }

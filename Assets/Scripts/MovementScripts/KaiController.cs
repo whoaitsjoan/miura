@@ -21,7 +21,8 @@ public class KaiController : MonoBehaviour
     [SerializeField] private float poundCooldown = 0.1f;
 
     private sceneChange sceneChange;
-    private bool onGround, isPounding;
+    private bool onGround;
+    public bool isPounding;
     private int poundCycle =1;
     bool canPound = true;
     private Vector2 playerVelocity;
