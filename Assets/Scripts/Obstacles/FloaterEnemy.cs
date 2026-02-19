@@ -15,6 +15,11 @@ public class FloaterEnemy : MonoBehaviour
         startPos = transform.position;
         rb = GetComponent<Rigidbody2D>();  
 
+        
+    }
+
+    void Update()
+    {
         if (transform.rotation.y == 180f)
         rb.AddForce(Vector2.left);
 

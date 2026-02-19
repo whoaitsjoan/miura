@@ -337,9 +337,10 @@ MonoBehaviour:
   baseGravity: 2
   maxFallSpeed: 18
   fallSpeedMultiplier: 2
-  poundForce: 2.5
-  poundDuration: 0.1
+  poundForce: 10
+  poundDuration: 1
   poundCooldown: 0.1
+  isPounding: 0
 --- !u!114 &18270046094415973
 MonoBehaviour:
   m_ObjectHideFlags: 0
