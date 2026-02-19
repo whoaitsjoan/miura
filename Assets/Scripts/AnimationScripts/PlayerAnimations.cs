@@ -14,7 +14,7 @@ public class PlayerAnimations : MonoBehaviour
 
     //these variables control flipping the player left or right
     private Rigidbody2D rb;
-    [HideInInspector] public bool IsFacingRight;
+    public bool IsFacingRight;
 
     //these variables will handle when to change to an idle animation
     [SerializeField]
@@ -139,11 +139,11 @@ public class PlayerAnimations : MonoBehaviour
         //here the player's y angle is rotated 180 degrees pos or neg
         //changing this changes the transform.right value
         //which will be important for our camera control scripting
-        if (IsFacingRight)
+        if (!IsFacingRight)
         {
-          Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
+          Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
           transform.rotation = Quaternion.Euler(rotator);
-          IsFacingRight = !IsFacingRight;  
+          IsFacingRight = true;  
 
           //Turn the Camera to match
           _cameraFollowObject.CallTurn();
@@ -151,7 +151,7 @@ public class PlayerAnimations : MonoBehaviour
 
         else
         {
-            Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
+            Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
             transform.rotation = Quaternion.Euler(rotator);
             IsFacingRight = !IsFacingRight;
 

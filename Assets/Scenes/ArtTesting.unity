@@ -2849,57 +2849,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 847076103460184663, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1332915268823731672, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
       propertyPath: _cameraFollowGO
       value: 
       objectReference: {fileID: 239045568}
-    - target: {fileID: 1466289979669516810, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_DefaultActionMap
-      value: fd49ed61-fe3c-45a7-afd3-3c11e8a98625
-      objectReference: {fileID: 0}
-    - target: {fileID: 1685728397367333994, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1837369202670844788, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_SpriteLibraryAsset
-      value: 
-      objectReference: {fileID: 7108339969198208228, guid: 9c0608783e2f03545b076e9b6be88acd, type: 3}
     - target: {fileID: 4051358885171168156, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4709515058803368276, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_labelHash
-      value: 0.48271573
-      objectReference: {fileID: 0}
-    - target: {fileID: 4709515058803368276, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_SpriteHash
-      value: 619566883
-      objectReference: {fileID: 0}
-    - target: {fileID: 4709515058803368276, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
       propertyPath: m_CategoryHash
       value: 6.4580854e-12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7618870835323803872, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_Size.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7618870835323803872, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_Size.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7618870835323803872, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 269841017, guid: bdb9d043532409343af0b5562f63f34d, type: 3}
-    - target: {fileID: 7618870835323803872, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

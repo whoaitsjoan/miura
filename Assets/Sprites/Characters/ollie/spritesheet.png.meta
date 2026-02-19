@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0cc78182cb512b24c922f724b11b88fd
+guid: eb88a1ae6e7935846b78a26d22f8775c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -151,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d4c63b3e244b5948b3661eae5cea73e
-      internalID: 1908149942
+      spriteID: def2e65eb5f6d7c43a4212ec2222eec5
+      internalID: 1598463447
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a13dbf0330b79d428152c4f86308b4d
-      internalID: -1661219638
+      spriteID: bfe20601f1960a4498cd005bd3d9e847
+      internalID: 1304225704
       vertices: []
       indices: 
       edges: []
@@ -195,8 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ca526ea59593074eaf22ad3ebe365f1
-      internalID: 2142311046
+      spriteID: b64f94dd13a7f07498f984e4c03049fd
+      internalID: 800436751
       vertices: []
       indices: 
       edges: []
@@ -217,8 +217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e13d8be5fca357340a676775dbb086ae
-      internalID: -388760916
+      spriteID: 4e32da766aee1e444a21387bd36f7b6f
+      internalID: -125957525
       vertices: []
       indices: 
       edges: []
@@ -227,7 +227,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0691ec3f3771dd84b9ab7efea6e3dc43
+    spriteID: a529acccf588dee4584bc084b9a5e547
     internalID: 0
     vertices: []
     indices: 
@@ -239,10 +239,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      spritesheet_0: 1908149942
-      spritesheet_1: -1661219638
-      spritesheet_2: 2142311046
-      spritesheet_3: -388760916
+      spritesheet_0: 1598463447
+      spritesheet_1: 1304225704
+      spritesheet_2: 800436751
+      spritesheet_3: -125957525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -65,8 +65,9 @@ public enum PanDirection
 //we set up a unique editor function for our class here
 //so that specific variables are visible in the inspector
 //depending on which of our booleans above are true
-[CustomEditor(typeof(CameraControlTrigger))]
 #if UNITY_EDITOR
+[CustomEditor(typeof(CameraControlTrigger))]
+
 public class MyScriptEditor : Editor
 {
     CameraControlTrigger cameraControlTrigger;

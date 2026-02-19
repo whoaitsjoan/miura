@@ -92,12 +92,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 666611745, guid: bf4a52a6736c8104fbfbc58cacc002f0, type: 3}
+  m_Sprite: {fileID: 269841017, guid: bdb9d043532409343af0b5562f63f34d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Ollie
+  m_DefaultActionMap: Kai
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!95 &1971743452276447
@@ -303,9 +303,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
   m_CategoryHash: 1.8625731e-11
-  m_labelHash: 0.0007750506
+  m_labelHash: 0.48271573
   m_SpriteKey: 0
-  m_SpriteHash: 69664418
+  m_SpriteHash: 522100559
 --- !u!114 &1837369202670844788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 83152a6ee7f123440beed918ff089229, type: 3}
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 9c0608783e2f03545b076e9b6be88acd, type: 3}
 --- !u!114 &847076103460184663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4051358885171168156}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8531d9349895000439a71a36f9ff2fc8, type: 3}
   m_Name: 
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4051358885171168156}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb09f840d6398ec4c993b210101e798f, type: 3}
   m_Name: 

@@ -1,8 +1,6 @@
 using System.Collections;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.TextCore.Text;
 
 public class OllieController : MonoBehaviour
 {
@@ -148,7 +146,7 @@ public class OllieController : MonoBehaviour
     private IEnumerator DashCoroutine(){
         canDash = false;
         isDashing = true;
-        float dashDirection = playerAnimations.IsFacingRight ? 1f : -1f;
+        float dashDirection = playerAnimations.IsFacingRight ? -1f : 1f;
         var gravity = rb.gravityScale;
         rb.gravityScale = 0;
         rb.linearVelocity = new Vector2(dashDirection * dashSpeed, rb.linearVelocity.y);
