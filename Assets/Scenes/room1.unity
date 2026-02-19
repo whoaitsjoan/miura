@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 200913537}
   - component: {fileID: 200913536}
   - component: {fileID: 200913535}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KaiBlocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1712,7 +1712,7 @@ GameObject:
   - component: {fileID: 603240721}
   - component: {fileID: 603240720}
   - component: {fileID: 603240719}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KaiBlocks (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11694,6 +11694,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1905336421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905336422}
+  m_Layer: 0
+  m_Name: reset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1905336422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905336421}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.7, y: -0.37, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1937421125 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3296131810588612973, guid: 192c7838c3948de4b8a4095b6c1f179a, type: 3}
@@ -11714,7 +11745,7 @@ GameObject:
   - component: {fileID: 1954116276}
   - component: {fileID: 1954116275}
   - component: {fileID: 1954116274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KaiBlocks (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12254,6 +12285,10 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 847076103460184663, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
+      propertyPath: poundDuration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1332915268823731672, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
       propertyPath: _cameraFollowGO
       value: 
@@ -12315,3 +12350,4 @@ SceneRoots:
   - {fileID: 1191103266}
   - {fileID: 874404745}
   - {fileID: 854753679}
+  - {fileID: 1905336422}
