@@ -21,6 +21,7 @@ public class EnemySpawnManager : MonoBehaviour
     public void SpawnEnemy()
     {
         Instantiate(floaterEnemy, spawnLocation.position, spawnRotation);
+
     }
 
 
