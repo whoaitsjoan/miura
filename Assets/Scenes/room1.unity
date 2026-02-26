@@ -12300,16 +12300,12 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 13
       objectReference: {fileID: 0}
-    - target: {fileID: 847076103460184663, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: poundDuration
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1332915268823731672, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
       propertyPath: _cameraFollowGO
       value: 
       objectReference: {fileID: 239045568}
     - target: {fileID: 1685728397367333994, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: moveSpeed
+      propertyPath: jumpForce
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1837369202670844788, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
@@ -12320,25 +12316,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4709515058803368276, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_CategoryHash
-      value: 6.4580854e-12
-      objectReference: {fileID: 0}
     - target: {fileID: 5754950562841093989, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: moveSpeed
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7618870835323803872, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 269841017, guid: bdb9d043532409343af0b5562f63f34d, type: 3}
-    - target: {fileID: 7618870835323803872, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7618870835323803872, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1849440599
+      propertyPath: jumpForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
