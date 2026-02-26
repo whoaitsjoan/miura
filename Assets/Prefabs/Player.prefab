@@ -19,10 +19,8 @@ GameObject:
   - component: {fileID: 1332915268823731672}
   - component: {fileID: 4709515058803368276}
   - component: {fileID: 1837369202670844788}
-  - component: {fileID: 847076103460184663}
   - component: {fileID: 18270046094415973}
-  - component: {fileID: 1685728397367333994}
-  - component: {fileID: 5754950562841093989}
+  - component: {fileID: 4217162595988407062}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -89,8 +87,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1849440599
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 269841017, guid: bdb9d043532409343af0b5562f63f34d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -302,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
-  m_CategoryHash: 1.8625731e-11
+  m_CategoryHash: 6.4580854e-12
   m_labelHash: 0.48271573
   m_SpriteKey: 0
   m_SpriteHash: 522100559
@@ -319,28 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteLibrary
   m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 9c0608783e2f03545b076e9b6be88acd, type: 3}
---- !u!114 &847076103460184663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4051358885171168156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8531d9349895000439a71a36f9ff2fc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KaiController
-  moveSpeed: 4.59
-  jumpForce: 10
-  baseGravity: 2
-  maxFallSpeed: 18
-  fallSpeedMultiplier: 2
-  poundForce: 10
-  poundDuration: 1
-  poundCooldown: 0.1
-  isPounding: 0
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: fdaab24a494718241affbc3096e5812e, type: 3}
 --- !u!114 &18270046094415973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,43 +330,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd02918ca62cd04ba5196a6d7b0cc89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterSwitch
---- !u!114 &1685728397367333994
+--- !u!114 &4217162595988407062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4051358885171168156}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb09f840d6398ec4c993b210101e798f, type: 3}
+  m_Script: {fileID: 11500000, guid: fe20341975723eb4baeedc6354f3461a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OllieController
+  m_EditorClassIdentifier: Assembly-CSharp::MainController
+  isPounding: 0
   moveSpeed: 4.59
+  isKai: 1
+  isOllie: 0
+  isBailey: 0
   jumpForce: 10
   baseGravity: 2
   maxFallSpeed: 18
   fallSpeedMultiplier: 2
+  poundForce: 2.5
+  poundDuration: 0.1
+  poundCooldown: 0.1
   dashSpeed: 20
   dashDuration: 0.1
   dashCooldown: 0.1
---- !u!114 &5754950562841093989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4051358885171168156}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a77f7ef4ec150648a98f4168eb65089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BaileyController
-  moveSpeed: 4.59
-  jumpForce: 10
-  baseGravity: 2
-  maxFallSpeed: 18
-  fallSpeedMultiplier: 2
-  flyForce: 0
+  flyForce: 5
   flyDuration: 0.1
   flyCooldown: 0.1

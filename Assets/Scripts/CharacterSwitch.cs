@@ -6,9 +6,9 @@ using UnityEngine.U2D.Animation;
 public class CharacterSwitch : MonoBehaviour
 {
     private PlayerInput playerInput;
-    private KaiController kaiController;
+    /* private KaiController kaiController;
     private OllieController ollieController;
-    private BaileyController baileyController;
+    private BaileyController baileyController; */
     private SpriteLibrary spriteLibrary;
     private SpriteResolver spriteResolver;
 
@@ -16,9 +16,9 @@ public class CharacterSwitch : MonoBehaviour
     void Start()
     {
         playerInput = GetComponent<PlayerInput>();
-        kaiController = GetComponent<KaiController>();
+        /* kaiController = GetComponent<KaiController>();
         ollieController = GetComponent<OllieController>();
-        baileyController = GetComponent<BaileyController>();
+        baileyController = GetComponent<BaileyController>(); */
 
         spriteLibrary = GetComponent<SpriteLibrary>();
         spriteResolver = GetComponent<SpriteResolver>();
@@ -33,34 +33,34 @@ public class CharacterSwitch : MonoBehaviour
     public void KaiSwitch()
     {
         var currentResolverCategory = spriteResolver.GetCategory();
-        if (kaiController.enabled)
+        /* if (kaiController.enabled)
         return;
 
         else
-        {
+        { */
         playerInput.SwitchCurrentActionMap("Kai");
         playerInput.defaultActionMap = "Kai";
 
         spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Kai");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
-        kaiController.enabled = true;
+        /* kaiController.enabled = true;
         if (ollieController.enabled)
         ollieController.enabled = false;
 
         if(baileyController.enabled)
         baileyController.enabled = false;
-        }
+        } */
     }
 
     public void OllieSwitch()
     {
         var currentResolverCategory = spriteResolver.GetCategory();
-        if (ollieController.enabled)
+        /* if (ollieController.enabled)
         {
             Debug.LogError("You're already Ollie!");
             return;
-        }
+        } */
         /*if (!GameManager.instance.OllieSaved)
         {
             Debug.LogError("You haven't saved Ollie yet!");
@@ -68,28 +68,28 @@ public class CharacterSwitch : MonoBehaviour
         }
         */
 
-        else
-        {
+        /* else
+        { */
         playerInput.SwitchCurrentActionMap("Ollie");
         playerInput.defaultActionMap = "Ollie";
 
         spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Ollie");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
-        ollieController.enabled = true;
+        /* ollieController.enabled = true;
         if (kaiController.enabled)
         kaiController.enabled = false;
 
         if(baileyController.enabled)
         baileyController.enabled = false;
-        }
+        } */
     }
 
     public void BaileySwitch()
     {
-        var currentResolverCategory = spriteResolver.GetCategory();
+        /* var currentResolverCategory = spriteResolver.GetCategory();
         if (baileyController.enabled)
-        return;
+        return; */
 
         /*if (!GameManager.instance.BaileySaved)
         {
@@ -98,20 +98,20 @@ public class CharacterSwitch : MonoBehaviour
         }
         */
 
-        else
-        {
+        /* else
+        { */
         playerInput.SwitchCurrentActionMap("Bailey");
         playerInput.defaultActionMap = "Bailey";
 
         spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Bailey");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
-        baileyController.enabled = true;
+        /* baileyController.enabled = true;
         if (kaiController.enabled)
         kaiController.enabled = false;
 
         if(ollieController.enabled)
         ollieController.enabled = false;
-        }
+        } */
     }
 }
