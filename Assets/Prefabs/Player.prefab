@@ -347,12 +347,12 @@ MonoBehaviour:
   isKai: 1
   isOllie: 0
   isBailey: 0
-  jumpForce: 10
+  jumpForce: 13
   baseGravity: 2
   maxFallSpeed: 18
   fallSpeedMultiplier: 2
   poundForce: 2.5
-  poundDuration: 0.1
+  poundDuration: 1
   poundCooldown: 0.1
   dashSpeed: 20
   dashDuration: 0.1

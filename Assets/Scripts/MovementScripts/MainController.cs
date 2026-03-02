@@ -1,5 +1,4 @@
 using System.Collections;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,7 +8,7 @@ public class MainController : MonoBehaviour
     private InputSystem_Actions input;
     private Rigidbody2D rb;
     private GroundCheck ground;
-    private sceneChange sceneChange;
+    private SceneChange sceneChange;
     private PlayerAnimations playerAnimations;
     private CharacterSwitch characterSwitch;
 
@@ -113,8 +112,8 @@ public class MainController : MonoBehaviour
     private void OnMove(InputValue inputValue){
         direction = inputValue.Get<Vector2>().x;
         playerAnimations.Walking();
-        /* if (direction == 0)
-        playerAnimations.NotWalking(); */
+        if (direction == 0)
+        playerAnimations.NotWalking();
     }
     private void OnAbility()
     {
@@ -217,10 +216,9 @@ public class MainController : MonoBehaviour
         }
     }   
 
-    private void OnInteract(InputValue inputValue)
+    private void OnInteract(InputValue inputValue, Collider2D other)
     {
-        if(sceneChange.isInDoor){
+        sceneChange = other.gameObject.GetComponent<SceneChange>();
             sceneChange.loadNewScene();
-        }
     }
 }

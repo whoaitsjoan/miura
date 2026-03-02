@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class sceneChange : MonoBehaviour
+public class SceneChange : MonoBehaviour
 {
     public string sceneName;
     [HideInInspector]public bool isInDoor;
@@ -13,7 +13,7 @@ public class sceneChange : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             isInDoor = true;
-            _newScene?.Invoke();
+            //_newScene?.Invoke();
         }
     }
     void OnTriggerExit2D(Collider2D collision)
@@ -25,6 +25,7 @@ public class sceneChange : MonoBehaviour
     }
     public void loadNewScene()
     {
+        if(isInDoor)
         SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
     }
 }

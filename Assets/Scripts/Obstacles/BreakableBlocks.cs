@@ -9,7 +9,7 @@ public class BreakableBlocks : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        var player = other.collider.GetComponent<KaiController>();
+        var player = other.collider.GetComponent<MainController>();
         Debug.Log("Collision!");
         if (player.isPounding)
         _hit?.Invoke();

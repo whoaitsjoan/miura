@@ -2250,7 +2250,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 957064270, guid: 820964bfa59644548aaf5e43b6176b9a, type: 3}
   m_Color: {r: 0.39607847, g: 0.6862745, b: 0.54901963, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2270,9 +2270,9 @@ Transform:
   m_GameObject: {fileID: 874404741}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.39, y: 9.18, z: 0}
-  m_LocalScale: {x: 1, y: 2.1541, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 41.21, y: 8.76, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12315,6 +12315,14 @@ PrefabInstance:
     - target: {fileID: 4051358885171168156, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217162595988407062, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
+      propertyPath: jumpForce
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217162595988407062, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
+      propertyPath: poundDuration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5754950562841093989, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
       propertyPath: jumpForce
