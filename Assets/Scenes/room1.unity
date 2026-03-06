@@ -491,7 +491,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9960785, g: 0.8941177, b: 0.5058824, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 18, y: 3, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -696,8 +696,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: E(or <sprite name="buttonprompts_2">)for abilities
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 156a67a554ff2124c9cabc2c1e16bbab, type: 2}
-  m_sharedMaterial: {fileID: 6048818479703992612, guid: 156a67a554ff2124c9cabc2c1e16bbab, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -721,7 +721,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.9
+  m_fontSize: 21.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -878,8 +878,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "A or D\n (or <sprite name=\"buttonprompts_1\">)\nto move"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 156a67a554ff2124c9cabc2c1e16bbab, type: 2}
-  m_sharedMaterial: {fileID: 6048818479703992612, guid: 156a67a554ff2124c9cabc2c1e16bbab, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.75
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1234,7 +1234,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.99607843, g: 0.89411765, b: 0.5058824, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 42, y: 15, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -1620,8 +1620,8 @@ MonoBehaviour:
 
     to jump'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 156a67a554ff2124c9cabc2c1e16bbab, type: 2}
-  m_sharedMaterial: {fileID: 6048818479703992612, guid: 156a67a554ff2124c9cabc2c1e16bbab, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1645,7 +1645,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.45
+  m_fontSize: 22.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1886,7 +1886,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.99607843, g: 0.89411765, b: 0.5058824, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 19, y: 3, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -3060,7 +3060,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.99607843, g: 0.89411765, b: 0.5058824, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 42, y: 15, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -3281,7 +3281,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.99607843, g: 0.89411765, b: 0.5058824, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 42, y: 12, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -11934,7 +11934,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.99607843, g: 0.89411765, b: 0.5058824, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
   m_Size: {x: 20, y: 3, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
