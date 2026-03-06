@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/room4.unity
     guid: 4a6f22eb5739a15418cf74ae10fbc5bf
   - enabled: 1
-    path: Assets/Scenes/room5.unity
+    path: Assets/Scenes/fakeRoom5.unity
     guid: f893f707e4f5e2642bf628addbb46cfd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
