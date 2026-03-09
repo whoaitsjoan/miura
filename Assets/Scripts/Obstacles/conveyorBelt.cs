@@ -1,17 +1,19 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class conveyorBelt : MonoBehaviour
 {
-    public Transform endpoint;
-    public float speed;
-    public GameObject conveyor;
+    [SerializeField]
+    private Transform endpoint;
+    [SerializeField]
+    private float speed;
+    [SerializeField]
+    private GameObject conveyor;
 
     void Start()
     {
-        endpoint = this.gameObject.transform.GetChild(0).GetComponent<Transform>();
-        conveyor = this.gameObject;
+        endpoint = gameObject.transform.GetChild(0).GetComponent<Transform>();
+        conveyor = gameObject;
         StartCoroutine(flipBelt());
     }
 
