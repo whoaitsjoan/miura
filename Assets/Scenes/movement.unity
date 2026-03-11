@@ -1147,13 +1147,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallerEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1373882858133795619, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
+      propertyPath: m_Size.x
+      value: 2.2599998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373882858133795619, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
+      propertyPath: m_Size.y
+      value: 2.3660054
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373882858133795619, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.68012524
+      objectReference: {fileID: 0}
     - target: {fileID: 2616215105183048275, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 2616215105183048275, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.74
+      value: -1.76
       objectReference: {fileID: 0}
     - target: {fileID: 2616215105183048275, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
       propertyPath: m_LocalPosition.z
