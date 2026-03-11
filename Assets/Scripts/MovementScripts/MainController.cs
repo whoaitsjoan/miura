@@ -11,6 +11,7 @@ public class MainController : MonoBehaviour
     private SceneChange sceneChange;
     private PlayerAnimations playerAnimations;
     private CharacterSwitch characterSwitch;
+    private GameManager gm;
 
     //movement
     private Vector2 playerVelocity;
@@ -53,6 +54,10 @@ public class MainController : MonoBehaviour
     [SerializeField] private float flyDuration = 0.1f;
     [SerializeField] private float flyCooldown = 0.1f;
 
+    void Awake()
+    {
+        gm = GameManager.instance;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -61,6 +66,7 @@ public class MainController : MonoBehaviour
         ground = GetComponent<GroundCheck>(); 
         playerAnimations = GetComponent<PlayerAnimations>();
         characterSwitch = GetComponent<CharacterSwitch>();     
+        gm = GameManager.instance;
     }
 
     void Update(){
@@ -192,7 +198,7 @@ public class MainController : MonoBehaviour
     }
     private void OnOllieSwitch(InputValue inputValue)
     {
-        if (inputValue.isPressed && !isOllie)
+        if (inputValue.isPressed && !isOllie && gm.OllieSaved)
         {
             isOllie = true;
             isBailey = false;
@@ -205,7 +211,7 @@ public class MainController : MonoBehaviour
 
     private void OnBaileySwitch(InputValue inputValue)
     {
-        if (inputValue.isPressed && !isBailey)
+        if (inputValue.isPressed && !isBailey && gm.BaileySaved)
         {
             isBailey = true;
             isKai = false;
