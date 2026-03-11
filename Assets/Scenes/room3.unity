@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 56197235}
   m_Layer: 0
   m_Name: DoorForwardLower
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -364,21 +364,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room4
   isInDoor: 0
-  _newScene:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 56197235}
-        m_TargetAssemblyTypeName: sceneChange, Assembly-CSharp
-        m_MethodName: loadNewScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &132838797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,7 +1881,7 @@ GameObject:
   - component: {fileID: 148140649}
   m_Layer: 0
   m_Name: DoorBackUpper
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1915,21 +1900,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room2
   isInDoor: 0
-  _newScene:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 148140649}
-        m_TargetAssemblyTypeName: sceneChange, Assembly-CSharp
-        m_MethodName: loadNewScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!61 &148140650
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6624,7 +6594,7 @@ GameObject:
   - component: {fileID: 1787336102}
   m_Layer: 0
   m_Name: DoorBackLower
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6643,21 +6613,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room2
   isInDoor: 0
-  _newScene:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1787336102}
-        m_TargetAssemblyTypeName: sceneChange, Assembly-CSharp
-        m_MethodName: loadNewScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!61 &1787336103
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6788,7 +6743,7 @@ GameObject:
   - component: {fileID: 1788423131}
   m_Layer: 0
   m_Name: Doors
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6826,7 +6781,7 @@ GameObject:
   - component: {fileID: 1808037337}
   m_Layer: 0
   m_Name: DoorSecretUpper
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6860,21 +6815,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room4
   isInDoor: 0
-  _newScene:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1808037337}
-        m_TargetAssemblyTypeName: sceneChange, Assembly-CSharp
-        m_MethodName: loadNewScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!61 &1808037338
 BoxCollider2D:
   m_ObjectHideFlags: 0

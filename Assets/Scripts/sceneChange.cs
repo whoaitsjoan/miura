@@ -1,14 +1,14 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
     public string sceneName;
     [HideInInspector]public bool isInDoor;
-    [SerializeField]
-    private UnityEvent _newScene;
-    void OnTriggerEnter2D(Collider2D collision)
+    
+    /* void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
@@ -22,10 +22,10 @@ public class SceneChange : MonoBehaviour
         {
             isInDoor = false;
         }
-    }
+    } */
     public void loadNewScene()
     {
-        if(isInDoor)
         SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        
     }
 }

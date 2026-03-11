@@ -1,7 +1,8 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.SceneManagement;
 public class MainController : MonoBehaviour
 {
     //component references
@@ -25,6 +26,8 @@ public class MainController : MonoBehaviour
     bool isFlying; 
     bool canFly = true;
     int flyCycle = 0;
+    bool isInDoor;
+    string sceneName;
     [SerializeField] private float moveSpeed = 4.59f;
 
     [Header("PlayerBools")]
@@ -222,9 +225,30 @@ public class MainController : MonoBehaviour
         }
     }   
 
-    private void OnInteract(InputValue inputValue, Collider2D other)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        sceneChange = other.gameObject.GetComponent<SceneChange>();
+        if(collision.gameObject.tag == "Door")
+        {
+            isInDoor = true;
+            sceneChange = collision.gameObject.GetComponent<SceneChange>();
+            Debug.Log("in door to "+sceneChange.sceneName);
+        }
+    }
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Door")
+        {
+            isInDoor = false;
+            sceneChange = null;
+            Debug.Log("exited door to "+sceneChange);
+        }
+    }
+    private void OnInteract(InputValue inputValue)
+    {
+        //sceneChange = other.gameObject.GetComponent<SceneChange>();
+        if (inputValue.isPressed && isInDoor)
+        {
             sceneChange.loadNewScene();
+        }
     }
 }

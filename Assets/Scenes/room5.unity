@@ -1568,7 +1568,7 @@ GameObject:
   - component: {fileID: 67155825}
   m_Layer: 0
   m_Name: doors
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1922,7 +1922,7 @@ GameObject:
   - component: {fileID: 590186212}
   m_Layer: 0
   m_Name: SecretDoorTop
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6020,7 +6020,7 @@ GameObject:
   - component: {fileID: 1027525487}
   m_Layer: 0
   m_Name: DoorForwardMiddle
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8382,7 +8382,7 @@ GameObject:
   - component: {fileID: 1734597959}
   m_Layer: 0
   m_Name: DoorBack
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
