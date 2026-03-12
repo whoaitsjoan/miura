@@ -1,8 +1,6 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 public class MainController : MonoBehaviour
 {
     //component references
@@ -57,6 +55,15 @@ public class MainController : MonoBehaviour
     [SerializeField] private float flyDuration = 0.1f;
     [SerializeField] private float flyCooldown = 0.1f;
 
+    [Header("Player SFX")]
+    [SerializeField] public AudioClip jumpSound;
+    [SerializeField] public AudioClip landSound;   
+    [SerializeField] public AudioClip poundSound;
+
+    [SerializeField] public AudioClip dashSound; 
+
+    [SerializeField] public AudioClip flySound;         
+
     void Awake()
     {
         gm = GameManager.instance;
@@ -98,6 +105,8 @@ public class MainController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             playerAnimations.Jumping();
+            SFXManager.instance.PlaySFXClip(jumpSound, transform, 1f);
+
         }    
         if (onGround && !inputValue.isPressed)
         {
@@ -243,6 +252,16 @@ public class MainController : MonoBehaviour
             Debug.Log("exited door to "+sceneChange);
         }
     }
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Door")
+        {
+            isInDoor = true;
+            sceneChange = collision.gameObject.GetComponent<SceneChange>();
+            Debug.Log("in door to "+sceneChange.sceneName);
+        }
+    }
+
     private void OnInteract(InputValue inputValue)
     {
         //sceneChange = other.gameObject.GetComponent<SceneChange>();

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.InputSystem;
 using UnityEngine.U2D.Animation;
 
@@ -11,6 +10,7 @@ public class CharacterSwitch : MonoBehaviour
     private BaileyController baileyController; */
     private SpriteLibrary spriteLibrary;
     private SpriteResolver spriteResolver;
+    private MainController mainController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +22,7 @@ public class CharacterSwitch : MonoBehaviour
 
         spriteLibrary = GetComponent<SpriteLibrary>();
         spriteResolver = GetComponent<SpriteResolver>();
+        mainController = GetComponent<MainController>();
     }
 
     // Update is called once per frame
@@ -43,6 +44,9 @@ public class CharacterSwitch : MonoBehaviour
 
         spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Kai");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
+
+        mainController.jumpSound = Resources.Load<AudioClip>("Audio/jump-kai");
+
 
         /* kaiController.enabled = true;
         if (ollieController.enabled)
@@ -76,6 +80,8 @@ public class CharacterSwitch : MonoBehaviour
         spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Ollie");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
+        mainController.jumpSound = Resources.Load<AudioClip>("Audio/jump-ollie");
+
         /* ollieController.enabled = true;
         if (kaiController.enabled)
         kaiController.enabled = false;
@@ -105,6 +111,8 @@ public class CharacterSwitch : MonoBehaviour
 
         spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Bailey");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
+
+        mainController.jumpSound = Resources.Load<AudioClip>("Audio/jump-bailey");
 
         /* baileyController.enabled = true;
         if (kaiController.enabled)
