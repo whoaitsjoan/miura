@@ -280,18 +280,17 @@ public class MainController : MonoBehaviour
             isInDoor = false;
             sceneChange = null;
             Debug.Log("exited door to "+sceneChange);
+            collision.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
-    /*void OnCollisionStay2D(Collision2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Door")
         {
             isInDoor = true;
-            sceneChange = collision.gameObject.GetComponent<SceneChange>();
-            Debug.Log("in door to "+sceneChange.sceneName);
+            collision.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
-    */
 
     private void OnInteract(InputValue inputValue)
     {

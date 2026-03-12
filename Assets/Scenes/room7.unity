@@ -3119,6 +3119,96 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollowObject
   _playerTransform: {fileID: 1378649389}
   _flipYRotationTime: 0.5
+--- !u!1 &163323411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163323412}
+  - component: {fileID: 163323413}
+  m_Layer: 0
+  m_Name: InteractPrompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &163323412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163323411}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.642288, y: 4.9805045, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 284812739}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &163323413
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163323411}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 1760142587
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -819949029, guid: 7b124aece5e592e4bb665719c65a7acc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &214792125
 GameObject:
   m_ObjectHideFlags: 0
@@ -3295,6 +3385,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 214792130}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 214792125}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -3307,6 +3409,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 214792132}
 --- !u!483693784 &214792131
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -4258,7 +4363,8 @@ Transform:
   m_LocalPosition: {x: 16.246569, y: 2.7442439, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 163323412}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &284812740
@@ -4276,6 +4382,96 @@ MonoBehaviour:
   sceneName: room8
   isInDoor: 0
   footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
+--- !u!1 &371270274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371270275}
+  - component: {fileID: 371270276}
+  m_Layer: 0
+  m_Name: InteractPrompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &371270275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371270274}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 33.52667, y: 6.9719086, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1456925052}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &371270276
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371270274}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 1760142587
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -819949029, guid: 7b124aece5e592e4bb665719c65a7acc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &434026863
 GameObject:
   m_ObjectHideFlags: 0
@@ -5743,6 +5939,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 473519781}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 473519776}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -5755,6 +5963,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 473519783}
 --- !u!483693784 &473519782
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -6482,6 +6693,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 705051068}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 705051063}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -6494,6 +6717,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 705051070}
 --- !u!483693784 &705051069
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -7009,6 +7235,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 797798172}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 797798167}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -7021,6 +7259,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 797798174}
 --- !u!483693784 &797798173
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -7491,6 +7732,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 886911935}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 886911930}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -7503,6 +7756,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 886911937}
 --- !u!483693784 &886911936
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -8705,6 +8961,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1223095339}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1223095334}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -8717,6 +8985,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 1223095341}
 --- !u!483693784 &1223095340
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -9163,7 +9434,7 @@ Tilemap:
       - {fileID: -693742275, guid: 384adfe53295ab34ab32a0d0235417f0, type: 3}
       - {fileID: 1336818218, guid: 384adfe53295ab34ab32a0d0235417f0, type: 3}
       - {fileID: 1571402386, guid: 384adfe53295ab34ab32a0d0235417f0, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 2, y: 2, z: 0}
@@ -9598,6 +9869,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1273342249}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1273342244}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -9610,6 +9893,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 1273342251}
 --- !u!483693784 &1273342250
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -10594,6 +10880,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1387854558}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1387854553}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -10606,6 +10904,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 1387854560}
 --- !u!483693784 &1387854559
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -11241,7 +11542,8 @@ Transform:
   m_LocalPosition: {x: -9.08, y: -0.24286234, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 371270275}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1469210284
@@ -11533,6 +11835,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1471486485}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1471486480}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -11545,6 +11859,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 1471486487}
 --- !u!483693784 &1471486486
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -11957,6 +12274,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1588578832}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1588578827}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -11969,6 +12298,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 1588578834}
 --- !u!483693784 &1588578833
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -12312,6 +12644,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1622691382}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1622691377}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -12324,6 +12668,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 1622691384}
 --- !u!483693784 &1622691383
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -15120,6 +15467,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1727045200}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1727045195}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -15132,6 +15491,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 1727045202}
 --- !u!483693784 &1727045201
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -15886,6 +16248,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1892941694}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1892941689}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -15898,6 +16272,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 1892941696}
 --- !u!483693784 &1892941695
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -16424,6 +16801,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2047132459}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2047132454}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -16436,6 +16825,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 2047132461}
 --- !u!483693784 &2047132460
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -16779,6 +17171,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2054381711}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2054381706}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -16791,6 +17195,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 2054381713}
 --- !u!483693784 &2054381712
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -17124,6 +17531,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2094926012}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2094926007}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -17136,6 +17555,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 2094926014}
 --- !u!483693784 &2094926013
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -17459,6 +17881,18 @@ MonoBehaviour:
   _hit:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2099019650}
+        m_TargetAssemblyTypeName: BreakableBlocks, Assembly-CSharp
+        m_MethodName: SpawnParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2099019645}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -17471,6 +17905,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _blocksHit: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  blockParticles: {fileID: 7904819815672290392, guid: 83cc0fe96cce9d84e8d5fa1cc0cacda8, type: 3}
+  tilemap: {fileID: 2099019652}
 --- !u!483693784 &2099019651
 TilemapRenderer:
   m_ObjectHideFlags: 0

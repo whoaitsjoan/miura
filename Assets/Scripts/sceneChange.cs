@@ -9,6 +9,12 @@ public class SceneChange : MonoBehaviour
     public string sceneName;
     [HideInInspector]public bool isInDoor;
     [SerializeField] public AudioClip footsteps;
+   /* public Animator transition;
+
+    public float endSceneWait;
+
+    public float transitionWait;
+*/
     
     /* void OnTriggerEnter2D(Collider2D collision)
     {
