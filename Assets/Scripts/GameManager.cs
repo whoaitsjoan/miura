@@ -7,7 +7,9 @@ public class GameManager : MonoBehaviour
 
     public bool OllieSaved {get; set;}
     public bool BaileySaved {get; set;}
-
+    public bool isKai {get; set;}
+    public bool isOllie {get; set;}
+    public bool isBailey{get; set;}
 
     private void Awake()
     {

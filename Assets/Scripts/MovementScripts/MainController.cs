@@ -28,10 +28,10 @@ public class MainController : MonoBehaviour
     string sceneName;
     [SerializeField] private float moveSpeed = 4.59f;
 
-    [Header("PlayerBools")]
-    [SerializeField]private bool isKai = true;
-    [SerializeField]private bool isOllie;
-    [SerializeField]private bool isBailey;
+   /*  [Header("PlayerBools")]
+    [SerializeField]private bool gm.isKai = true;
+    [SerializeField]private bool gm.isOllie;
+    [SerializeField]private bool gm.isBailey; */
 
     [Header("Jump")]
     [SerializeField] private float jumpForce = 13f;
@@ -77,6 +77,25 @@ public class MainController : MonoBehaviour
         playerAnimations = GetComponent<PlayerAnimations>();
         characterSwitch = GetComponent<CharacterSwitch>();     
         gm = GameManager.instance;
+        gm.isKai = true;
+        if (gm.isOllie)
+        {
+            gm.isOllie = true;
+            gm.isBailey = false;
+            gm.isKai = false;
+            jumpForce = 10f;
+            Debug.Log("Switching to Ollie!");
+            characterSwitch.OllieSwitch();
+        }
+        if (gm.isBailey)
+        {
+            gm.isBailey = true;
+            gm.isKai = false;
+            gm.isOllie = false;
+            jumpForce = 11.5f;
+            Debug.Log("Switching to Bailey!");
+            characterSwitch.BaileySwitch();
+        }
     }
 
     void Update(){
@@ -135,17 +154,17 @@ public class MainController : MonoBehaviour
     }
     private void OnAbility()
     {
-        if (isKai && canPound && poundCycle == 1)
+        if (gm.isKai && canPound && poundCycle == 1)
         {
             Debug.Log("pound");
             poundCycle = 0;
             StartCoroutine(startPound());
         }
-        if(isOllie && canDash){
+        if(gm.isOllie && canDash){
             Debug.Log("dash");
             StartCoroutine(DashCoroutine());
         }
-        if (isBailey&&canFly&&flyCycle==1)
+        if (gm.isBailey&&canFly&&flyCycle==1)
         {
             flyCycle = 0;
             StartCoroutine(startFly());
@@ -198,11 +217,11 @@ public class MainController : MonoBehaviour
     }
     private void OnKaiSwitch(InputValue inputValue)
     {
-        if (inputValue.isPressed && !isKai)
+        if (inputValue.isPressed && !gm.isKai)
         {
-            isKai = true;
-            isBailey = false;
-            isOllie = false;
+            gm.isKai = true;
+            gm.isBailey = false;
+            gm.isOllie = false;
             jumpForce = 13f;
             Debug.Log("Switching to Kai!");
             characterSwitch.KaiSwitch();
@@ -210,11 +229,11 @@ public class MainController : MonoBehaviour
     }
     private void OnOllieSwitch(InputValue inputValue)
     {
-        if (inputValue.isPressed && !isOllie && gm.OllieSaved)
+        if (inputValue.isPressed && !gm.isOllie && gm.OllieSaved)
         {
-            isOllie = true;
-            isBailey = false;
-            isKai = false;
+            gm.isOllie = true;
+            gm.isBailey = false;
+            gm.isKai = false;
             jumpForce = 10f;
             Debug.Log("Switching to Ollie!");
             characterSwitch.OllieSwitch();
@@ -223,11 +242,11 @@ public class MainController : MonoBehaviour
 
     private void OnBaileySwitch(InputValue inputValue)
     {
-        if (inputValue.isPressed && !isBailey && gm.BaileySaved)
+        if (inputValue.isPressed && !gm.isBailey && gm.BaileySaved)
         {
-            isBailey = true;
-            isKai = false;
-            isOllie = false;
+            gm.isBailey = true;
+            gm.isKai = false;
+            gm.isOllie = false;
             jumpForce = 11.5f;
             Debug.Log("Switching to Bailey!");
             characterSwitch.BaileySwitch();
