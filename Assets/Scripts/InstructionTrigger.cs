@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,5 +12,11 @@ public class InstructionTrigger : MonoBehaviour
         instructionPopup?.Invoke();
     }
 
-
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+    if (collision.CompareTag("Player"))
+        {
+            instructionObject.SetActive(false);
+        }
+    }
 }
