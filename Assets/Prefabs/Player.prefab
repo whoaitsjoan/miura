@@ -357,6 +357,6 @@ MonoBehaviour:
   dashSpeed: 20
   dashDuration: 0.1
   dashCooldown: 0.1
-  flyForce: 5
+  flyForce: 13
   flyDuration: 0.1
   flyCooldown: 0.1
