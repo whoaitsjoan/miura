@@ -9,6 +9,8 @@ public class FloaterEnemy : MonoBehaviour
     
     public SpriteRenderer sprite;
 
+    public AudioClip hitEnemy, getHit;
+
     void Start()
     {
         //reset = GameObject.Find("reset").transform.position;
@@ -49,10 +51,12 @@ public class FloaterEnemy : MonoBehaviour
 
         if(collision.gameObject.tag == "Player" && pointOfContact == new Vector2(0,-1))
         {
+            SFXManager.instance.PlaySFXClip(hitEnemy, transform, 1f);
             Destroy(gameObject);
         }
         else if(collision.gameObject.tag == "Player")
         {
+            SFXManager.instance.PlaySFXClip(getHit, transform, 1f);
             collision.gameObject.transform.position = reset;
         }
     }

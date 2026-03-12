@@ -108,6 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FloaterEnemy
   anim: {fileID: 0}
   sprite: {fileID: 0}
+  hitEnemy: {fileID: 8300000, guid: 3bb9bbf665a8948458abcd5d9cc0f80d, type: 3}
+  getHit: {fileID: 8300000, guid: 3f5e59a60fce6d94da5e88075530f938, type: 3}
 --- !u!61 &1373882858133795619
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,7 +144,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -2.43, y: -1.71}
+  m_Offset: {x: -3.88, y: 2.14}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -152,7 +154,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.26, y: 1.93}
+  m_Size: {x: 2.66, y: 11.28}
   m_EdgeRadius: 0
 --- !u!95 &1890740881490130136
 Animator:

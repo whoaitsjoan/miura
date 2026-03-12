@@ -14662,6 +14662,7 @@ GameObject:
   - component: {fileID: 1687310974}
   - component: {fileID: 1687310973}
   - component: {fileID: 1687310975}
+  - component: {fileID: 1687310976}
   m_Layer: 0
   m_Name: SecretGuy6
   m_TagString: Untagged
@@ -14764,6 +14765,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1687310976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687310972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008ccecb87b9b424c9d718cf56f28541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::secretGuyCollection
+  endGameText: {fileID: 0}
+  getSecretGuy: {fileID: 8300000, guid: bc4b7316caabf1e4e98235dd87936fe8, type: 3}
 --- !u!1 &1744205193
 GameObject:
   m_ObjectHideFlags: 0
@@ -16337,6 +16352,7 @@ GameObject:
   - component: {fileID: 2129726645}
   - component: {fileID: 2129726644}
   - component: {fileID: 2129726646}
+  - component: {fileID: 2129726647}
   m_Layer: 0
   m_Name: SecretGuy7
   m_TagString: Untagged
@@ -16439,6 +16455,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2129726647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129726643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008ccecb87b9b424c9d718cf56f28541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::secretGuyCollection
+  endGameText: {fileID: 0}
+  getSecretGuy: {fileID: 8300000, guid: bc4b7316caabf1e4e98235dd87936fe8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

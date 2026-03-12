@@ -203,8 +203,8 @@ GameObject:
   m_Component:
   - component: {fileID: 46599727}
   - component: {fileID: 46599726}
-  - component: {fileID: 46599728}
   - component: {fileID: 46599729}
+  - component: {fileID: 46599730}
   m_Layer: 0
   m_Name: SecretGuy1
   m_TagString: Untagged
@@ -285,18 +285,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &46599728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46599725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7c3e4bf8b585848981655799e631ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!95 &46599729
 Animator:
   serializedVersion: 7
@@ -319,6 +307,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &46599730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46599725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008ccecb87b9b424c9d718cf56f28541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::secretGuyCollection
+  endGameText: {fileID: 0}
+  getSecretGuy: {fileID: 8300000, guid: bc4b7316caabf1e4e98235dd87936fe8, type: 3}
 --- !u!1 &49950396
 GameObject:
   m_ObjectHideFlags: 0

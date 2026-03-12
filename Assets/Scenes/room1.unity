@@ -3415,6 +3415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb7da27b7cb52a49894134c7a3c7f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  friendsCollected: 0
 --- !u!4 &1268405974
 Transform:
   m_ObjectHideFlags: 0
