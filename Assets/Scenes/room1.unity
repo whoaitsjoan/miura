@@ -2418,6 +2418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room2
   isInDoor: 0
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!61 &874404743
 BoxCollider2D:
   m_ObjectHideFlags: 0

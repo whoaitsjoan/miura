@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -7,6 +8,7 @@ public class SceneChange : MonoBehaviour
 {
     public string sceneName;
     [HideInInspector]public bool isInDoor;
+    [SerializeField] public AudioClip footsteps;
     
     /* void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,9 +25,17 @@ public class SceneChange : MonoBehaviour
             isInDoor = false;
         }
     } */
-    public void loadNewScene()
+    public void LoadNewScene()
     {
-        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        //SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        StartCoroutine(LoadScene());
         
+    }
+
+    private IEnumerator LoadScene()
+    {
+        SFXManager.instance.PlaySFXClip(footsteps, transform, 1f);
+        yield return new WaitForSeconds(footsteps.length);
+        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
     }
 }

@@ -1096,6 +1096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284812739}
   - component: {fileID: 284812738}
+  - component: {fileID: 284812740}
   m_Layer: 0
   m_Name: DoorForward
   m_TagString: Door
@@ -1176,6 +1177,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &284812740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284812737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6800b8bc905417247ab700ed6d21bb6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChange
+  sceneName: StartMenu
+  isInDoor: 0
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!1 &383765131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3530,8 +3546,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6800b8bc905417247ab700ed6d21bb6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
-  sceneName: room6
+  sceneName: room7
   isInDoor: 0
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!61 &918713684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3645,7 +3662,7 @@ Transform:
   m_GameObject: {fileID: 918713682}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.08, y: -2.05, z: 0}
+  m_LocalPosition: {x: -12.042194, y: -2.2138243, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []

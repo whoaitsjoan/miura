@@ -13,17 +13,26 @@ public class CharacterSwitch : MonoBehaviour
     private MainController mainController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
-        /* kaiController = GetComponent<KaiController>();
-        ollieController = GetComponent<OllieController>();
-        baileyController = GetComponent<BaileyController>(); */
-
         spriteLibrary = GetComponent<SpriteLibrary>();
         spriteResolver = GetComponent<SpriteResolver>();
         mainController = GetComponent<MainController>();
     }
+    /* void Start()
+    {
+        
+        playerInput = GetComponent<PlayerInput>();
+
+
+        spriteLibrary = GetComponent<SpriteLibrary>();
+        spriteResolver = GetComponent<SpriteResolver>();
+        mainController = GetComponent<MainController>();
+        
+    }
+    */
 
     // Update is called once per frame
     void Update()
@@ -45,7 +54,7 @@ public class CharacterSwitch : MonoBehaviour
         spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Kai");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
-        mainController.jumpSound = Resources.Load<AudioClip>("Audio/jump-kai");
+        //mainController.jumpSound = Resources.Load<AudioClip>("Audio/jump-kai");
 
 
         /* kaiController.enabled = true;
@@ -80,7 +89,7 @@ public class CharacterSwitch : MonoBehaviour
         spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Ollie");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
-        mainController.jumpSound = Resources.Load<AudioClip>("Audio/jump-ollie");
+        //mainController.jumpSound = Resources.Load<AudioClip>("Audio/jump-ollie");
 
         /* ollieController.enabled = true;
         if (kaiController.enabled)
@@ -112,7 +121,7 @@ public class CharacterSwitch : MonoBehaviour
         spriteLibrary.spriteLibraryAsset = Resources.Load<SpriteLibraryAsset>("SpriteLibraries/Bailey");
         spriteResolver.SetCategoryAndLabel("Default", "spritesheet_0");
 
-        mainController.jumpSound = Resources.Load<AudioClip>("Audio/jump-bailey");
+        //mainController.jumpSound = Resources.Load<AudioClip>("Audio/jump-bailey");
 
         /* baileyController.enabled = true;
         if (kaiController.enabled)

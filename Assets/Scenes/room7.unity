@@ -4273,8 +4273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6800b8bc905417247ab700ed6d21bb6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChange
-  sceneName: room7
+  sceneName: room8
   isInDoor: 0
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!1 &434026863
 GameObject:
   m_ObjectHideFlags: 0
@@ -9162,7 +9163,7 @@ Tilemap:
       - {fileID: -693742275, guid: 384adfe53295ab34ab32a0d0235417f0, type: 3}
       - {fileID: 1336818218, guid: 384adfe53295ab34ab32a0d0235417f0, type: 3}
       - {fileID: 1571402386, guid: 384adfe53295ab34ab32a0d0235417f0, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 2, y: 2, z: 0}
@@ -11123,6 +11124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room6
   isInDoor: 0
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!61 &1456925050
 BoxCollider2D:
   m_ObjectHideFlags: 0

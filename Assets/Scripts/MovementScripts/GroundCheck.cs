@@ -10,9 +10,11 @@ public class GroundCheck : MonoBehaviour
     //private PhysicsMaterial2D _material;
     private RaycastHit2D _hit;
    // private float _playerHalfHeight;
+   private MainController mainController;
 
     private void Awake()
     {
+        mainController = GetComponent<MainController>();
         //_playerHalfHeight = _spriteRenderer.bounds.extents.y;
     }
 

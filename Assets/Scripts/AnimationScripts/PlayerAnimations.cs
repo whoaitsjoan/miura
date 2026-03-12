@@ -33,7 +33,7 @@ public class PlayerAnimations : MonoBehaviour
 
         if (rb.linearVelocity.x < 0 || rb.linearVelocity.x > 0)
         {
-            Debug.Log("Turn check!");
+            //Debug.Log("Turn check!");
             TurnCheck();
         }
         //as long as we are not walking or jumping, the timer for an idle anim counts up

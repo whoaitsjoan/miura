@@ -4192,6 +4192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284812739}
   - component: {fileID: 284812738}
+  - component: {fileID: 284812740}
   m_Layer: 0
   m_Name: DoorForward
   m_TagString: Untagged
@@ -4272,6 +4273,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &284812740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284812737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6800b8bc905417247ab700ed6d21bb6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChange
+  sceneName: room7
+  isInDoor: 0
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!1001 &368702985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5506,7 +5522,7 @@ Tilemap:
       - {fileID: 316287762, guid: 803e24bce434d914f9118d70489fd45f, type: 3}
       - {fileID: 1023996038, guid: 803e24bce434d914f9118d70489fd45f, type: 3}
       - {fileID: -899192401, guid: 803e24bce434d914f9118d70489fd45f, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: 2, z: 0}
@@ -5530,7 +5546,7 @@ Tilemap:
       - {fileID: -376245941, guid: 4feb1b524ca158d4db100a917572688f, type: 3}
       - {fileID: -1212876122, guid: 4feb1b524ca158d4db100a917572688f, type: 3}
       - {fileID: 1253782282, guid: 4feb1b524ca158d4db100a917572688f, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -8769,6 +8785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room5
   isInDoor: 0
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!61 &1111802444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9823,6 +9840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room5
   isInDoor: 0
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!61 &1233434949
 BoxCollider2D:
   m_ObjectHideFlags: 0

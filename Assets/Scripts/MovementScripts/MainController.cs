@@ -223,6 +223,7 @@ public class MainController : MonoBehaviour
             gm.isBailey = false;
             gm.isOllie = false;
             jumpForce = 13f;
+            jumpSound = Resources.Load<AudioClip>("Audio/jump-kai");
             Debug.Log("Switching to Kai!");
             characterSwitch.KaiSwitch();
         }
@@ -236,6 +237,7 @@ public class MainController : MonoBehaviour
             gm.isKai = false;
             jumpForce = 10f;
             Debug.Log("Switching to Ollie!");
+            jumpSound = Resources.Load<AudioClip>("Audio/jump-ollie");
             characterSwitch.OllieSwitch();
         }
     }
@@ -249,6 +251,7 @@ public class MainController : MonoBehaviour
             gm.isOllie = false;
             jumpForce = 11.5f;
             Debug.Log("Switching to Bailey!");
+            jumpSound = Resources.Load<AudioClip>("Audio/jump-bailey");
             characterSwitch.BaileySwitch();
         }
     }   
@@ -271,7 +274,7 @@ public class MainController : MonoBehaviour
             Debug.Log("exited door to "+sceneChange);
         }
     }
-    void OnCollisionStay2D(Collision2D collision)
+    /*void OnCollisionStay2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Door")
         {
@@ -280,13 +283,15 @@ public class MainController : MonoBehaviour
             Debug.Log("in door to "+sceneChange.sceneName);
         }
     }
+    */
 
     private void OnInteract(InputValue inputValue)
     {
         //sceneChange = other.gameObject.GetComponent<SceneChange>();
         if (inputValue.isPressed && isInDoor)
         {
-            sceneChange.loadNewScene();
+            SFXManager.instance.PlaySFXClip(jumpSound, transform, 1f);
+            sceneChange.LoadNewScene();
         }
     }
 }

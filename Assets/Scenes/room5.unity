@@ -2022,15 +2022,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3296131810588612973, guid: 192c7838c3948de4b8a4095b6c1f179a, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.15962088
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3296131810588612973, guid: 192c7838c3948de4b8a4095b6c1f179a, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.15962088
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3296131810588612973, guid: 192c7838c3948de4b8a4095b6c1f179a, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.16037738
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4354354197567535057, guid: 192c7838c3948de4b8a4095b6c1f179a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2283,6 +2283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneChange
   sceneName: room6
   isInDoor: 0
+  footsteps: {fileID: 0}
 --- !u!61 &590186213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6413,6 +6414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneChange
   sceneName: room6
   isInDoor: 0
+  footsteps: {fileID: 0}
 --- !u!61 &1027525488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8798,6 +8800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::sceneChange
   sceneName: room4
   isInDoor: 0
+  footsteps: {fileID: 0}
 --- !u!61 &1734597960
 BoxCollider2D:
   m_ObjectHideFlags: 0

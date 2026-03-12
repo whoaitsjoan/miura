@@ -344,9 +344,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainController
   isPounding: 0
   moveSpeed: 4.59
-  isKai: 1
-  isOllie: 0
-  isBailey: 0
   jumpForce: 13
   baseGravity: 2
   maxFallSpeed: 18
@@ -360,3 +357,8 @@ MonoBehaviour:
   flyForce: 13
   flyDuration: 0.1
   flyCooldown: 0.1
+  jumpSound: {fileID: 8300000, guid: 823f2af581191904c95ea9659acff473, type: 3}
+  landSound: {fileID: 8300000, guid: 534b72ac4e88b224295fd9b6a2b8648a, type: 3}
+  poundSound: {fileID: 8300000, guid: d437762db35ffa448b3e539d132ad75d, type: 3}
+  dashSound: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
+  flySound: {fileID: 8300000, guid: 58c49946876287641b88ba7ef80f529e, type: 3}
