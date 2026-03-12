@@ -7,11 +7,13 @@ public class FloaterEnemy : MonoBehaviour
     private Vector2 pointOfContact;
     public Animator anim;
     
+    public SpriteRenderer sprite;
 
     void Start()
     {
         //reset = GameObject.Find("reset").transform.position;
         anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -39,6 +41,7 @@ public class FloaterEnemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         anim.enabled = true;
+        sprite.enabled = true;
     }
     void OnCollisionEnter2D(Collision2D collision)
     {

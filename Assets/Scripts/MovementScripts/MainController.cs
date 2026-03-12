@@ -11,6 +11,7 @@ public class MainController : MonoBehaviour
     private PlayerAnimations playerAnimations;
     private CharacterSwitch characterSwitch;
     private GameManager gm;
+    private TrailRenderer trail;
 
     //movement
     private Vector2 playerVelocity;
@@ -75,7 +76,8 @@ public class MainController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         ground = GetComponent<GroundCheck>(); 
         playerAnimations = GetComponent<PlayerAnimations>();
-        characterSwitch = GetComponent<CharacterSwitch>();     
+        characterSwitch = GetComponent<CharacterSwitch>();   
+        trail = GetComponent<TrailRenderer>();   
         gm = GameManager.instance;
         gm.isKai = true;
         if (gm.isOllie)
@@ -174,18 +176,21 @@ public class MainController : MonoBehaviour
     {
         canPound = false;
         isPounding = true;
+        trail.emitting = true;
         rb.gravityScale = baseGravity * poundForce;
         rb.AddForce(Vector2.down*poundForce, ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(poundDuration);
         rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         isPounding = false;
+        trail.emitting = false;
         yield return new WaitForSeconds(poundCooldown);
         canPound = true;
     }
     private IEnumerator DashCoroutine(){
         canDash = false;
         isDashing = true;
+        trail.emitting = true;
         float dashDirection = playerAnimations.IsFacingRight ? -1f : 1f;
         var gravity = rb.gravityScale;
         rb.gravityScale = 0;
@@ -197,6 +202,7 @@ public class MainController : MonoBehaviour
         rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         isDashing = false;
         rb.gravityScale = gravity;
+        trail.emitting = false;
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
@@ -207,11 +213,13 @@ public class MainController : MonoBehaviour
         isFlying = true;
         var gravity = rb.gravityScale;
         rb.gravityScale = 0;
+        trail.emitting = true;
         rb.AddForce(Vector2.up*flyForce, ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(flyDuration);
         isFlying = false;
         rb.gravityScale = gravity;
+        trail.emitting = false;
         yield return new WaitForSeconds(flyCooldown);
         canFly = true;
     }

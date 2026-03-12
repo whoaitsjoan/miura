@@ -2242,7 +2242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1373882858133795619, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
       propertyPath: m_Offset.y
-      value: 2.12
+      value: -4.91
       objectReference: {fileID: 0}
     - target: {fileID: 2616215105183048275, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2250,7 +2250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2616215105183048275, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 7.29
       objectReference: {fileID: 0}
     - target: {fileID: 2616215105183048275, guid: cbec62e3afc219641b1b71ac0f60dc2b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12596,6 +12596,18 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1133902293056818641, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
+      propertyPath: m_Time
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133902293056818641, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
+      propertyPath: m_Emitting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133902293056818641, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1332915268823731672, guid: 6960215cf8995834388e5ba7fe781a95, type: 3}
       propertyPath: _cameraFollowGO
       value: 
