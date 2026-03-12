@@ -44,4 +44,9 @@ public class SceneChange : MonoBehaviour
         yield return new WaitForSeconds(footsteps.length);
         SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
     }
+
+    public void startGame()
+    {
+         SceneManager.LoadSceneAsync("room1", LoadSceneMode.Single);
+    }
 }

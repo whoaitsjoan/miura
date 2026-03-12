@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
         instance = this;
         OllieSaved = false;
         BaileySaved = false;
+        isKai = true;
         DontDestroyOnLoad(gameObject);
     }
 

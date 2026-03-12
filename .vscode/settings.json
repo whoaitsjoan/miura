@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Miura.slnx"
+    "dotnet.defaultSolution": "miura.slnx"
 }
