@@ -2284,7 +2284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneChange
   sceneName: room6
   isInDoor: 0
-  footsteps: {fileID: 0}
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!61 &590186213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6510,7 +6510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneChange
   sceneName: room6
   isInDoor: 0
-  footsteps: {fileID: 0}
+  footsteps: {fileID: 8300000, guid: 69dc3563b334d644eb5f9cb808c1f175, type: 3}
 --- !u!61 &1027525488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7280,7 +7280,7 @@ GameObject:
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1220978554
 MonoBehaviour:
   m_ObjectHideFlags: 0

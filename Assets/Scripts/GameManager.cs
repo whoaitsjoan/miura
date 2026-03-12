@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public bool isKai {get; set;}
     public bool isOllie {get; set;}
     public bool isBailey{get; set;}
+    public int friendsCollected;
 
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
         OllieSaved = false;
         BaileySaved = false;
         isKai = true;
+        friendsCollected = 0;
         DontDestroyOnLoad(gameObject);
     }
 
