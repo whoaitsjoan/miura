@@ -26,6 +26,9 @@ public class MainController : MonoBehaviour
     bool canFly = true;
     int flyCycle = 0;
     bool isInDoor;
+
+    private bool _isNearNPC;
+    private InstructionTrigger instructionTrigger;
     string sceneName;
     [SerializeField] private float moveSpeed = 4.59f;
 
@@ -195,7 +198,7 @@ public class MainController : MonoBehaviour
         var gravity = rb.gravityScale;
         rb.gravityScale = 0;
         rb.linearVelocity = new Vector2(dashDirection * dashSpeed, rb.linearVelocity.y);
-        
+        SFXManager.instance.PlaySFXClip(dashSound, transform, 1f);
 
         yield return new WaitForSeconds(dashDuration);
 
@@ -215,6 +218,7 @@ public class MainController : MonoBehaviour
         rb.gravityScale = 0;
         trail.emitting = true;
         rb.AddForce(Vector2.up*flyForce, ForceMode2D.Impulse);
+        SFXManager.instance.PlaySFXClip(flySound, transform, 1f);
 
         yield return new WaitForSeconds(flyDuration);
         isFlying = false;
@@ -262,7 +266,15 @@ public class MainController : MonoBehaviour
             jumpSound = Resources.Load<AudioClip>("Audio/jump-bailey");
             characterSwitch.BaileySwitch();
         }
-    }   
+    }  
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.layer == 6 && rb.linearVelocity.y != 0)
+        {
+            SFXManager.instance.PlaySFXClip(landSound, transform, 1f);
+        }
+    } 
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -280,9 +292,16 @@ public class MainController : MonoBehaviour
             isInDoor = false;
             sceneChange = null;
             Debug.Log("exited door to "+sceneChange);
+            //this removed the button prompt when walking past the door collider
             collision.transform.GetChild(0).gameObject.SetActive(false);
         }
+        if(collision.gameObject.tag == "NPC")
+        {
+            _isNearNPC = false;
+            collision.transform.GetChild(0).gameObject.SetActive(false);            
+        }
     }
+    //this sets up the button prompt above doors 
     void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Door")
@@ -290,15 +309,24 @@ public class MainController : MonoBehaviour
             isInDoor = true;
             collision.transform.GetChild(0).gameObject.SetActive(true);
         }
+        if(collision.gameObject.tag == "NPC")
+        {
+            _isNearNPC = true;
+            collision.transform.GetChild(0).gameObject.SetActive(true); 
+            instructionTrigger = collision.gameObject.GetComponent<InstructionTrigger>();           
+        }
     }
 
     private void OnInteract(InputValue inputValue)
     {
-        //sceneChange = other.gameObject.GetComponent<SceneChange>();
         if (inputValue.isPressed && isInDoor)
         {
             SFXManager.instance.PlaySFXClip(jumpSound, transform, 1f);
             sceneChange.LoadNewScene();
+        }
+        if (inputValue.isPressed && _isNearNPC)
+        {
+            instructionTrigger.AskForInstruction();
         }
     }
 }
